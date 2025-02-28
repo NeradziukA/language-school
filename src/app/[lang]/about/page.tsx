@@ -1,12 +1,14 @@
-import { useTranslation } from "@/i18n";
-import { I12n } from "@/i18n/types";
 import styles from "./about.module.css";
 
+import { useTranslation } from "@/i18n";
+import { I12n } from "@/i18n/types";
+
 interface Params {
-  params: I12n;
+  params: Promise<I12n>;
 }
 
-export default async function About({ params: { lang } }: Params) {
+export default async function About({ params }: Params) {
+  const { lang } = await params;
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const { t } = await useTranslation(lang, "common");
 

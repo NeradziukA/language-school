@@ -3,10 +3,11 @@ import { useTranslation } from "@/i18n";
 import { I12n } from "@/i18n/types";
 
 interface Params {
-  params: I12n;
+  params: Promise<I12n>;
 }
 
-export default async function Home({ params: { lang } }: Params) {
+export default async function Home({ params }: Params) {
+  const { lang } = await params;
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const { t } = await useTranslation(lang, "common");
 
