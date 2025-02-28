@@ -1,5 +1,4 @@
 import Link from "next/link";
-import styles from "./page.module.css";
 import { useTranslation } from "@/i18n";
 import { I12n } from "@/i18n/types";
 
@@ -11,12 +10,10 @@ export default async function Home({ params: { lang } }: Params) {
   const { t } = await useTranslation(lang, "common");
 
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
+    <div>
+      <main>
         <h1>{t("welcome")}</h1>
-        <Link href={`${lang}/about`} className={styles.link}>
-          {t("about")}
-        </Link>
+        <Link href={`${lang}/about`}>{t("about")}</Link>
       </main>
     </div>
   );

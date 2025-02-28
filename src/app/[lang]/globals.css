@@ -68,3 +68,22 @@ a {
 .content {
   padding: var(--spacing-base);
 }
+
+.lang-icon {
+  width: 25px;
+  height: 15px;
+  background-image: url("/images/lang-flags.png");
+}
+
+.lang-icon-ru {
+  background-position: -225px -255px;
+}
+.lang-icon-en {
+  background-position: -450px -60px;
+}
+.lang-icon-fr {
+  background-position: -500px -90px;
+}
+.lang-icon-ka {
+  background-position: -175px -150px;
+}

@@ -19,7 +19,11 @@ export const LangSelector: React.FC<I12n> = ({ lang }) => {
     <div className={styles.langSelector}>
       <select value={lang} onChange={handleChange}>
         {languages.map((lng) => (
-          <option key={lng} value={lng}>
+          <option
+            key={lng}
+            value={lng}
+            className={`lang-icon lang-icon-${lng}`}
+          >
             {lng}
           </option>
         ))}

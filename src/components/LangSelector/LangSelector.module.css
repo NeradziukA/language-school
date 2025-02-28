@@ -16,3 +16,24 @@
   margin: 0;
   cursor: pointer;
 }
+
+.lang-icon {
+  background-image: url("/images/lang-flags.png");
+  background-repeat: no-repeat;
+}
+
+.lang-icon-ru {
+  background-position: -225px -255px;
+}
+
+.lang-icon-en {
+  background-position: -450px -60px;
+}
+
+.lang-icon-fr {
+  background-position: -500px -90px;
+}
+
+.lang-icon-ka {
+  background-position: -175px -150px;
+}
