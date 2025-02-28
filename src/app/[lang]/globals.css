@@ -1,15 +1,15 @@
 :root {
   --primary-color: #66af68;
   --secondary-color: #6b8e5d;
-  --background-color: #F5F5F5;
+  --background-color: #f5f5f5;
   --text-color: #333;
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
-  --font-family-sans: 'Helvetica Neue', Arial, sans-serif;
-  --font-family-mono: 'Courier New', Courier, monospace;
+  --font-family-sans: "Helvetica Neue", Arial, sans-serif;
+  --font-family-mono: "Courier New", Courier, monospace;
   --font-size-base: 16px;
   --font-size-large: 24px;
   --font-size-small: 14px;
@@ -57,4 +57,14 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.content {
+  padding: var(--spacing-base);
 }

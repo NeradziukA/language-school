@@ -1,16 +1,12 @@
-@import '../../styles/theme.module.css';
-
 .footer {
-  background-color: var(--background-color);
   padding: var(--spacing-base);
+  background-color: var(--background-color);
   text-align: center;
-  font-family: var(--font-family-sans);
+  border-top: 1px solid var(--gray-alpha-200);
   font-size: var(--font-size-small);
   color: var(--text-color);
-  margin-top: var(--spacing-base);
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
+}
+
+.footer p {
+  margin: 0;
 }

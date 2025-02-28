@@ -1,20 +1,17 @@
-@import '../../styles/theme.module.css';
-
 .header {
-  background-color: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: var(--spacing-base);
-  font-family: var(--font-family-sans);
-  margin-top: 0;
-  margin-bottom: var(--spacing-base);
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
+  background-color: var(--background-color);
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
 }
 
 .link {
-  margin-right: var(--spacing-base);
   color: var(--primary-color);
   text-decoration: none;
 }
@@ -23,7 +20,10 @@
   text-decoration: underline;
 }
 
-.active {
+.link.active {
   font-weight: bold;
-  text-decoration: underline;
+}
+
+.langSelector {
+  margin-left: auto;
 }

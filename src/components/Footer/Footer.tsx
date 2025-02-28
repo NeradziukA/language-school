@@ -1,9 +1,13 @@
 import styles from "./Footer.module.css";
+import { useTranslation } from "@/i18n";
+import { I12n } from "@/i18n/types";
 
-export default function Footer() {
+export async function Footer({ lang }: I12n) {
+  const { t } = await useTranslation(lang, "common");
+
   return (
     <footer className={styles.footer}>
-      <p>&copy; 2025 French Language School. All rights reserved.</p>
+      <p>&copy; {t("footer_text")}</p>
     </footer>
   );
 }

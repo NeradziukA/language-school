@@ -3,28 +3,35 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import styles from "./Header.module.css";
+import { LangSelector } from "@/components";
+import { I12n } from "@/i18n/types";
 
-export default function Header() {
+export function Header({ lang }: I12n) {
   const pathname = usePathname();
 
   return (
     <header className={styles.header}>
-      <nav>
+      <nav className={styles.nav}>
         <Link
-          href="/"
-          className={`${styles.link} ${pathname === "/" ? styles.active : ""}`}
+          href={`/${lang}`}
+          className={`${styles.link} ${
+            pathname === `/${lang}` ? styles.active : ""
+          }`}
         >
           Home
         </Link>
         <Link
-          href="/about"
+          href={`/${lang}/about`}
           className={`${styles.link} ${
-            pathname === "/about" ? styles.active : ""
+            pathname === `/${lang}/about` ? styles.active : ""
           }`}
         >
           About
         </Link>
       </nav>
+      <div className={styles.langSelector}>
+        <LangSelector lang={lang} />
+      </div>
     </header>
   );
 }
