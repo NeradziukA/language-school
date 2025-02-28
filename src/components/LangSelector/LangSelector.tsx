@@ -12,7 +12,9 @@ export const LangSelector: React.FC<I12n> = ({ lang }) => {
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedLang = event.target.value;
     const newPathname = pathname?.replace(`/${lang}`, `/${selectedLang}`);
-    newPathname && router.push(newPathname);
+    if (newPathname) {
+      router.push(newPathname);
+    }
   };
 
   return (

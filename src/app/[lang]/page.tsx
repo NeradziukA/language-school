@@ -7,6 +7,7 @@ interface Params {
 }
 
 export default async function Home({ params: { lang } }: Params) {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { t } = await useTranslation(lang, "common");
 
   return (
