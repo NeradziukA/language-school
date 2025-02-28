@@ -1,71 +1,56 @@
+@import '../styles/theme.module.css';
+
 .page {
-  --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-items: center;
-  min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
-  font-family: var(--font-geist-sans);
-}
-
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
+  min-height: 100vh;
+  padding-top: calc(var(--spacing-base) * 2 + 48px); /* Adjust for header height */
+  padding-bottom: calc(var(--spacing-base) * 2 + 48px); /* Adjust for footer height */
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
+  gap: var(--spacing-large);
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .main ol {
-  font-family: var(--font-geist-mono);
+  font-family: var(--font-family-mono);
   padding-left: 0;
   margin: 0;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: var(--font-size-small);
+  line-height: 1.5;
   letter-spacing: -0.01em;
   list-style-position: inside;
 }
 
 .main li:not(:last-of-type) {
-  margin-bottom: 8px;
+  margin-bottom: var(--spacing-small);
 }
 
 .main code {
   font-family: inherit;
   background: var(--gray-alpha-100);
-  padding: 2px 4px;
+  padding: var(--spacing-small);
   border-radius: 4px;
   font-weight: 600;
 }
 
 .ctas {
   display: flex;
-  gap: 16px;
+  gap: var(--spacing-base);
 }
 
 .ctas a {
   appearance: none;
   border-radius: 128px;
   height: 48px;
-  padding: 0 20px;
+  padding: 0 var(--spacing-base);
   border: none;
   border: 1px solid transparent;
   transition:
@@ -76,15 +61,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: var(--font-size-base);
+  line-height: 1.25;
   font-weight: 500;
 }
 
 a.primary {
-  background: var(--foreground);
-  color: var(--background);
-  gap: 8px;
+  background: var(--primary-color);
+  color: var(--background-color);
+  gap: var(--spacing-small);
 }
 
 a.secondary {
@@ -93,19 +78,33 @@ a.secondary {
 }
 
 .footer {
-  grid-row-start: 3;
   display: flex;
-  gap: 24px;
+  gap: var(--spacing-base);
+  margin-top: var(--spacing-base);
 }
 
 .footer a {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: var(--spacing-small);
 }
 
 .footer img {
   flex-shrink: 0;
+}
+
+.link {
+  display: inline-block;
+  margin-top: var(--spacing-base);
+  padding: var(--spacing-small) var(--spacing-base);
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.link:hover {
+  background-color: var(--secondary-color);
 }
 
 /* Enable hover only on non-touch devices */
@@ -128,8 +127,8 @@ a.secondary {
 
 @media (max-width: 600px) {
   .page {
-    padding: 32px;
-    padding-bottom: 80px;
+    padding: var(--spacing-base);
+    padding-bottom: var(--spacing-large);
   }
 
   .main {
@@ -145,9 +144,9 @@ a.secondary {
   }
 
   .ctas a {
-    font-size: 14px;
+    font-size: var(--font-size-small);
     height: 40px;
-    padding: 0 16px;
+    padding: 0 var(--spacing-small);
   }
 
   a.secondary {

@@ -1,0 +1,17 @@
+@import '../styles/theme.module.css';
+
+.header {
+  background-color: var(--background-color);
+  padding: var(--spacing-base);
+  font-family: var(--font-family-sans);
+}
+
+.link {
+  margin-right: var(--spacing-base);
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
