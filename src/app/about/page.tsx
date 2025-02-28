@@ -17,16 +17,15 @@ export default function About() {
           <h2>Meet Our Best Teacher</h2>
           <Image
             className={styles.teacherImage}
-            src="/images/best-teacher.jpg"
+            src="/images/teacher.png"
             alt="Best Teacher"
             width={300}
             height={300}
           />
           <p>
-            Our best teacher, Marie Lomouri, has many years of experience in
-            teaching French. She is passionate about helping students achieve
-            fluency and has a unique teaching style that makes learning fun and
-            effective.
+            Our best teacher, Marie, has many years of experience in teaching
+            French. She is passionate about helping students achieve fluency and
+            has a unique teaching style that makes learning fun and effective.
           </p>
         </section>
       </main>
