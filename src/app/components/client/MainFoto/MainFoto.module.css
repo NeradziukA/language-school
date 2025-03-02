@@ -3,7 +3,7 @@
   line-height: 0;
   z-index: 3;
   text-align: center;
-  img {
+  .img {
     max-width: 100%;
     height: auto;
   }
