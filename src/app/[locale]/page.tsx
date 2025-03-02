@@ -1,0 +1,12 @@
+import { BigFlag, Tile, MainFoto } from "../components/client";
+import styles from "./page.module.css";
+
+export default function Home() {
+  return (
+    <main className={styles.content}>
+      <MainFoto />
+      <Tile />
+      <BigFlag />
+    </main>
+  );
+}

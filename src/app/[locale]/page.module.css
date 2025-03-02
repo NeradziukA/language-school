@@ -1,0 +1,12 @@
+.page {
+  display: grid;
+  padding: 20px 0 0;
+  max-width: 1080px;
+  font-family: var(--font-geist-sans);
+  margin: 0 auto;
+  background-color: var(--background);
+}
+
+.content {
+  position: relative;
+}
