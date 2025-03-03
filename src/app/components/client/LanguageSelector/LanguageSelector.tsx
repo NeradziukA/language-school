@@ -11,7 +11,7 @@ function LanguageSelector() {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const defaultLanguage = pathname.split("/")[1];
+      const defaultLanguage = pathname?.split("/")[1];
       if (defaultLanguage) {
         setLanguage(defaultLanguage);
       }
@@ -37,10 +37,10 @@ function LanguageSelector() {
       onChange={handleChange}
     >
       {!language && <option></option>}
-      <option value="en">English</option>
-      <option value="ru">Русский</option>
-      <option value="fr">French</option>
-      <option value="ka">ქართული</option>
+      <option value="en">EN</option>
+      <option value="ru">RU</option>
+      <option value="fr">FR</option>
+      <option value="ka">KA</option>
     </select>
   );
 }
