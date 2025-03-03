@@ -8,4 +8,9 @@ export default {
       "Contact me for a free trial lesson and start your journey to fluency today!",
   },
   menu: { home: "Home", contacts: "Contacts" },
+  meta: {
+    title: "French Tutor",
+    description:
+      "Learn French with personalized lessons from an experienced tutor",
+  },
 } as const;

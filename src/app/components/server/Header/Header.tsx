@@ -2,6 +2,7 @@ import { getI18n, getCurrentLocale } from "@locales/server";
 import styles from "./Header.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import LanguageSelector from "../../client/LanguageSelector/LanguageSelector";
 
 export async function Header() {
   const t = await getI18n();
@@ -16,6 +17,9 @@ export async function Header() {
       <Link href={`/${locale}/contacts`}>
         <p>{t("menu.contacts")}</p>
       </Link>
+      <div className={styles.languageSelectorContainer}>
+        <LanguageSelector />
+      </div>
     </header>
   );
 }

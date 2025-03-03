@@ -1,0 +1,5 @@
+.languageSelect {
+  height: 30px;
+  border-radius: 5px;
+  border-color: var(--background);
+}
