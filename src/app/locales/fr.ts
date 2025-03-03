@@ -20,7 +20,7 @@ export default {
         "Apprenez le français avec des leçons personnalisées d'un tuteur expérimenté",
     },
     offers: {
-      title: "Ce que nous offrons",
+      title: "Ce que j'offre",
       description:
         "Apprenez le français avec des leçons personnalisées d'un tuteur expérimenté",
     },

@@ -21,7 +21,7 @@ export default {
         "Learn French with personalized lessons from an experienced tutor",
     },
     offers: {
-      title: "What We Offer",
+      title: "What I Offer",
       description:
         "Learn French with personalized lessons from an experienced tutor",
     },
