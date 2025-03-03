@@ -3,12 +3,12 @@ export const offers: Record<string, { title: string; content: string }[]> = {
     {
       title: "Learning Program",
       content:
-        "Join our French language tutoring program and receive personalized lessons tailored to your individual needs.",
+        "Join my French language tutoring program and receive personalized lessons tailored to your individual needs.",
     },
     {
       title: "For All Levels",
       content:
-        "Whether you are a beginner or looking to improve your skills, our experienced tutor will guide you through engaging and interactive sessions.",
+        "Whether you are a beginner or looking to improve your skills, I will guide you through engaging and interactive sessions.",
     },
     {
       title: "Focus on Conversation",
@@ -21,21 +21,21 @@ export const offers: Record<string, { title: string; content: string }[]> = {
         "Flexible scheduling and a supportive learning environment will help you achieve your language goals.",
     },
     {
-      title: "Contact Us",
+      title: "Contact Me",
       content:
-        "Contact us today for a free trial lesson and start your journey to mastering the French language!",
+        "Contact me today for a free trial lesson and start your journey to mastering the French language!",
     },
   ],
   ru: [
     {
       title: "Программа обучения",
       content:
-        "Присоединяйтесь к нашей программе обучения французскому языку и получите персонализированные уроки, адаптированные к вашим индивидуальным потребностям.",
+        "Присоединяйтесь к моей программе обучения французскому языку и получите персонализированные уроки, адаптированные к вашим индивидуальным потребностям.",
     },
     {
       title: "Для всех уровней",
       content:
-        "Независимо от того, являетесь ли вы новичком или хотите улучшить свои навыки, наш опытный репетитор проведет вас через увлекательные и интерактивные занятия.",
+        "Независимо от того, являетесь ли вы новичком или хотите улучшить свои навыки, я проведу вас через увлекательные и интерактивные занятия.",
     },
     {
       title: "Фокус на разговоре",
@@ -48,21 +48,21 @@ export const offers: Record<string, { title: string; content: string }[]> = {
         "Гибкий график и поддерживающая учебная среда помогут вам достичь ваших языковых целей.",
     },
     {
-      title: "Свяжитесь с нами",
+      title: "Свяжитесь со мной",
       content:
-        "Свяжитесь с нами сегодня для бесплатного пробного урока и начните свой путь к овладению французским языком!",
+        "Свяжитесь со мной сегодня для бесплатного пробного урока и начните свой путь к овладению французским языком!",
     },
   ],
   fr: [
     {
       title: "Programme d'apprentissage",
       content:
-        "Rejoignez notre programme de tutorat en français et bénéficiez de leçons personnalisées adaptées à vos besoins individuels.",
+        "Rejoignez mon programme de tutorat en français et bénéficiez de leçons personnalisées adaptées à vos besoins individuels.",
     },
     {
       title: "Pour tous les niveaux",
       content:
-        "Que vous soyez débutant ou que vous souhaitiez perfectionner vos compétences, notre tuteur expérimenté vous guidera à travers des sessions engageantes et interactives.",
+        "Que vous soyez débutant ou que vous souhaitiez perfectionner vos compétences, je vous guiderai à travers des sessions engageantes et interactives.",
     },
     {
       title: "Focus sur la conversation",
@@ -75,21 +75,21 @@ export const offers: Record<string, { title: string; content: string }[]> = {
         "Une planification flexible et un environnement d'apprentissage favorable garantissent que vous atteindrez vos objectifs linguistiques.",
     },
     {
-      title: "Contactez-nous",
+      title: "Contactez-moi",
       content:
-        "Contactez-nous dès aujourd'hui pour une leçon d'essai gratuite et commencez votre parcours vers la maîtrise du français!",
+        "Contactez-moi dès aujourd'hui pour une leçon d'essai gratuite et commencez votre parcours vers la maîtrise du français!",
     },
   ],
   ka: [
     {
       title: "სასწავლო პროგრამა",
       content:
-        "შეუერთდით ჩვენს ფრანგული ენის მასწავლებლის პროგრამას და მიიღეთ პერსონალიზებული გაკვეთილები, რომლებიც მორგებულია თქვენს ინდივიდუალურ საჭიროებებზე.",
+        "შეუერთდით ჩემს ფრანგული ენის მასწავლებლის პროგრამას და მიიღეთ პერსონალიზებული გაკვეთილები, რომლებიც მორგებულია თქვენს ინდივიდუალურ საჭიროებებზე.",
     },
     {
       title: "ყველა დონისთვის",
       content:
-        "თუ თქვენ დამწყები ხართ ან გსურთ თქვენი უნარების დახვეწა, ჩვენი გამოცდილი მასწავლებელი გაგიძღვებათ საინტერესო და ინტერაქტიულ სესიებში.",
+        "თუ თქვენ დამწყები ხართ ან გსურთ თქვენი უნარების დახვეწა, მე გაგიძღვებით საინტერესო და ინტერაქტიულ სესიებში.",
     },
     {
       title: "საუბრის ფოკუსი",
@@ -102,9 +102,9 @@ export const offers: Record<string, { title: string; content: string }[]> = {
         "მოქნილი განრიგი და მხარდამჭერი სასწავლო გარემო უზრუნველყოფს, რომ მიაღწიოთ თქვენს ენობრივ მიზნებს.",
     },
     {
-      title: "დაგვიკავშირდით",
+      title: "დამიკავშირდით",
       content:
-        "დაგვიკავშირდით დღეს უფასო საცდელი გაკვეთილისთვის და დაიწყეთ თქვენი გზა ფრანგული ენის დაუფლებაში!",
+        "დამიკავშირდით დღეს უფასო საცდელი გაკვეთილისთვის და დაიწყეთ თქვენი გზა ფრანგული ენის დაუფლებაში!",
     },
   ],
 };
