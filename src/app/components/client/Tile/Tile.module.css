@@ -41,4 +41,12 @@
     left: 0;
     width: auto;
   }
+
+  .psTitle {
+    font-size: 24px;
+  }
+
+  .content {
+    font-size: 20px;
+  }
 }
