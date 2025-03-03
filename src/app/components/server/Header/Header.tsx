@@ -14,6 +14,9 @@ export async function Header() {
         <Image src="/logo-menu.png" alt="Logo Menu" width={40} height={40} />
         <p>{t("menu.home")}</p>
       </Link>
+      <Link href={`/${locale}/offers`}>
+        <p>{t("menu.offers")}</p>
+      </Link>
       <Link href={`/${locale}/contacts`}>
         <p>{t("menu.contacts")}</p>
       </Link>

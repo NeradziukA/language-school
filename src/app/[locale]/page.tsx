@@ -14,8 +14,8 @@ export async function generateMetadata({
   const t = await getI18n();
 
   return {
-    title: t("meta.title"),
-    description: t("meta.description"),
+    title: t("meta.home.title"),
+    description: t("meta.home.description"),
   };
 }
 

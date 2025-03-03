@@ -2,6 +2,7 @@ import { getI18n } from "@/app/locales/server";
 import { Metadata } from "next";
 import { setStaticParamsLocale } from "next-international/server";
 import styles from "./page.module.css";
+import { Content } from "@components/client";
 
 export async function generateMetadata({
   params,
@@ -13,11 +14,15 @@ export async function generateMetadata({
   const t = await getI18n();
 
   return {
-    title: t("meta.contacts.title"),
-    description: t("meta.contacts.description"),
+    title: t("meta.offers.title"),
+    description: t("meta.offers.description"),
   };
 }
 
-export default function Contacts() {
-  return <main className={styles.content}></main>;
+export default function Offers() {
+  return (
+    <main className={styles.content}>
+      <Content pageKey="page.offer" />
+    </main>
+  );
 }

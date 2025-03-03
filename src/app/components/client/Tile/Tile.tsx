@@ -7,12 +7,12 @@ export function Tile() {
 
   return (
     <aside className={styles.tile}>
-      <p className={styles.title}>{t("asideTile.title")}</p>
+      <p className={styles.title}>{t("page.home.asideTile.title")}</p>
       <div className={styles.divider} />
-      <p className={styles.content}>{t("asideTile.content")}</p>
-      <p className={styles.psTitle}>{t("asideTile.psTitle")}</p>
+      <p className={styles.content}>{t("page.home.asideTile.content")}</p>
+      <p className={styles.psTitle}>{t("page.home.asideTile.psTitle")}</p>
       <div className={styles.divider} />
-      <p className={styles.content}>{t("asideTile.psContent")}</p>
+      <p className={styles.content}>{t("page.home.asideTile.psContent")}</p>
     </aside>
   );
 }

@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 16px;
   align-items: center;
   width: 100%;
   background-color: var(--background-light);
