@@ -10,12 +10,11 @@ function LanguageSelector() {
   const [language, setLanguage] = useState<string>();
 
   useEffect(() => {
-  const pathname = usePathname();
-  const [language, setLanguage] = useState<string>();
-
-  useEffect(() => {
     if (typeof window !== "undefined") {
-      return localStorage.getItem("language") ?? "en";
+      const defaultLanguage = pathname.split("/")[1];
+      if (defaultLanguage) {
+        setLanguage(defaultLanguage);
+      }
     }
   }, [pathname]);
 
