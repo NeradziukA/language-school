@@ -53,7 +53,7 @@ export default async function RootLayout({
       />
       <link rel="manifest" href="/site.webmanifest" />
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <div className={styles.page}>
+        <div className={styles.layout}>
           <I18nProviderClient locale={locale}>
             <Header />
             {children}
