@@ -1,12 +1,13 @@
 .tile {
   position: absolute;
   z-index: 3;
-  top: 3px;
+  top: 20px;
   left: 60px;
   width: 220px;
   background-color: var(--background-light);
   padding: 40px 20px;
   font-size: 14px;
+  border-radius: 3px;
 }
 
 .title {

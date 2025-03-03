@@ -14,9 +14,13 @@ export function Content({ pageKey }: Readonly<{ pageKey: PageKey }>) {
 
   if (Array.isArray(content)) {
     return (
-      <div className={styles.content}>
+      <div className={`${styles.content} ${styles.fadeIn}`}>
         {content.map((item: Offer, index) => (
-          <div key={index} className={styles.offer}>
+          <div
+            key={index}
+            className={`${styles.offer} ${styles.slideUp}`}
+            style={{ animationDelay: `${index * 0.1}s` }}
+          >
             <h3 className={styles.title}>{item.title}</h3>
             <div className={styles.divider} />
             <p className={styles.description}>{item.content}</p>
@@ -26,5 +30,5 @@ export function Content({ pageKey }: Readonly<{ pageKey: PageKey }>) {
     );
   }
 
-  return <div className={styles.content}>{content}</div>;
+  return <div className={`${styles.content} ${styles.fadeIn}`}>{content}</div>;
 }
