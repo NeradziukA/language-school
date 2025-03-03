@@ -1,11 +1,28 @@
 "use client";
-import { useI18n } from "@locales/client";
 import styles from "./Content.module.css";
+import { loadApi, PageKey } from "@/app/api/loader";
 
-type PageKey = "page.offer" | "page.contact";
+type Offer = {
+  title: string;
+  content: string;
+};
 
 export function Content({ pageKey }: Readonly<{ pageKey: PageKey }>) {
-  const t = useI18n();
+  const content = loadApi(pageKey, "en");
 
-  return <div className={styles.content}>{t(pageKey)}</div>;
+  if (Array.isArray(content)) {
+    return (
+      <div className={styles.content}>
+        {content.map((item: Offer, index) => (
+          <div key={index} className={styles.offer}>
+            <h3 className={styles.title}>{item.title}</h3>
+            <div className={styles.divider} />
+            <p className={styles.description}>{item.content}</p>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  return <div className={styles.content}>{content}</div>;
 }

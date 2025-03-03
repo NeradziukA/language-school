@@ -1,3 +1,26 @@
 .content {
   margin: 20px 60px;
+  line-height: 1.6;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.offer {
+  padding: 20px 20px 100px;
+  background-color: var(--background-light);
+}
+
+.title {
+  font-size: 24px;
+}
+
+.description {
+  font-size: 20px;
+}
+
+.divider {
+  border-top: 2px solid #000000;
+  width: 40%;
+  margin: 10px 0;
 }

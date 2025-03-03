@@ -22,7 +22,7 @@ export async function generateMetadata({
 export default function Offers() {
   return (
     <main className={styles.content}>
-      <Content pageKey="page.offer" />
+      <Content pageKey="offer" />
     </main>
   );
 }

@@ -2,7 +2,7 @@
   display: grid;
   padding: 20px 0 0;
   max-width: 1080px;
-  min-height: 100vh;
+  min-height: 50vh;
   grid-template-rows: auto 1fr auto;
   font-family: var(--font-geist-sans);
   margin: 0 auto;
