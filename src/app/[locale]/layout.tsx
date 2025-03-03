@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import { Footer, Header } from "@components/server";
+import { I18nProviderClient } from "@locales/client";
 import { setStaticParamsLocale } from "next-international/server";
+import "./globals.css";
+import styles from "./page.module.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -50,7 +53,13 @@ export default async function RootLayout({
       />
       <link rel="manifest" href="/site.webmanifest" />
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <div className={styles.page}>
+          <I18nProviderClient locale={locale}>
+            <Header />
+            {children}
+            <Footer />
+          </I18nProviderClient>
+        </div>
       </body>
     </html>
   );
