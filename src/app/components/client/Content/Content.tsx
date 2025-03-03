@@ -1,4 +1,5 @@
 "use client";
+import { useCurrentLocale } from "@/app/locales/client";
 import styles from "./Content.module.css";
 import { loadApi, PageKey } from "@/app/api/loader";
 
@@ -8,7 +9,8 @@ type Offer = {
 };
 
 export function Content({ pageKey }: Readonly<{ pageKey: PageKey }>) {
-  const content = loadApi(pageKey, "en");
+  const locale = useCurrentLocale();
+  const content = loadApi(pageKey, locale);
 
   if (Array.isArray(content)) {
     return (
