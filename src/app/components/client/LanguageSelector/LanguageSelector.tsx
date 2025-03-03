@@ -12,7 +12,9 @@ function LanguageSelector() {
   useEffect(() => {
     if (typeof window !== "undefined") {
       const defaultLanguage = pathname.split("/")[1];
-      defaultLanguage && setLanguage(defaultLanguage);
+      if (defaultLanguage) {
+        setLanguage(defaultLanguage);
+      }
     }
   }, [pathname]);
 
