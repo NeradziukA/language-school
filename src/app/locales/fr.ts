@@ -12,7 +12,7 @@ export default {
     },
     contact: "Appelez-moi",
   },
-  menu: { home: "Accueil", offers: "Offres", contacts: "Contacts" },
+  menu: { home: "Accueil", offer: "Offre", contact: "Contact" },
   meta: {
     home: {
       title: "Tuteur de français",

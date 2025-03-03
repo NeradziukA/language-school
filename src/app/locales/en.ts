@@ -13,7 +13,7 @@ export default {
 
     contact: "Call me",
   },
-  menu: { home: "Home", offers: "Offers", contacts: "Contacts" },
+  menu: { home: "Home", offer: "Offer", contact: "Contact" },
   meta: {
     home: {
       title: "French Tutor",

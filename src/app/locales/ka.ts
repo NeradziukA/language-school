@@ -12,7 +12,7 @@ export default {
     },
     contact: "დამირეკეთ",
   },
-  menu: { home: "მთავარი", offers: "შეთავაზებები", contacts: "კონტაქტები" },
+  menu: { home: "მთავარი", offer: "შეთავაზება", contact: "კონტაქტი" },
   meta: {
     home: {
       title: "ფრანგული ენის მასწავლებელი",

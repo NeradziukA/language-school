@@ -15,10 +15,10 @@ export async function Header() {
         <p>{t("menu.home")}</p>
       </Link>
       <Link href={`/${locale}/offers`}>
-        <p>{t("menu.offers")}</p>
+        <p>{t("menu.offer")}</p>
       </Link>
       <Link href={`/${locale}/contacts`}>
-        <p>{t("menu.contacts")}</p>
+        <p>{t("menu.contact")}</p>
       </Link>
       <div className={styles.languageSelectorContainer}>
         <LanguageSelector />

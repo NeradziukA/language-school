@@ -12,7 +12,7 @@ export default {
     },
     contact: "Позвоните мне",
   },
-  menu: { home: "Главная", offers: "Предложения", contacts: "Контакты" },
+  menu: { home: "Главная", offer: "Предложение", contact: "Контакт" },
   meta: {
     home: {
       title: "Репетитор по французскому",
