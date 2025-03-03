@@ -9,14 +9,6 @@
   width: 100%;
   background-color: var(--background-light);
   padding: 5px 80px;
-
-  a {
-    overflow: hidden;
-    p {
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-  }
 }
 
 .logo {
@@ -24,10 +16,20 @@
   flex-direction: row;
   align-items: center;
   gap: 10px;
+  overflow: hidden;
 }
 
 .languageSelectorContainer {
   margin-left: auto;
+}
+
+.label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.link {
+  overflow: hidden;
 }
 
 @media (max-width: 800px) {
