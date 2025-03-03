@@ -6,13 +6,18 @@ import { useRouter } from "next/navigation";
 function LanguageSelector() {
   const router = useRouter();
   const [language, setLanguage] = useState<string>(() => {
-    return localStorage.getItem("language") || "en";
+    if (typeof window !== "undefined") {
+      return localStorage.getItem("language") ?? "en";
+    }
+    return "en";
   });
 
   useEffect(() => {
-    localStorage.setItem("language", language);
-    const currentPath = window.location.pathname.replace(/^\/[a-z]{2}/, "");
-    router.push(`/${language}${currentPath}`);
+    if (typeof window !== "undefined") {
+      localStorage.setItem("language", language);
+      const currentPath = window.location.pathname.replace(/^\/[a-z]{2}/, "");
+      router.push(`/${language}${currentPath}`);
+    }
   }, [language, router]);
 
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
