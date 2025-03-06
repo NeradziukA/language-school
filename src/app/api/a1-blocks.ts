@@ -1,7 +1,6 @@
-export const a1Blocks: Record<
-  string,
-  { title: string; content: string; link: { href: string; label: string } }[]
-> = {
+import { TopicBlock } from "./types";
+
+export const a1Blocks: Record<string, TopicBlock[]> = {
   en: [
     {
       title: "Greetings and Introductions",
@@ -11,6 +10,7 @@ export const a1Blocks: Record<
         href: "/en/students/self-study/a1/greetings-and-introductions",
         label: "Start exercises",
       },
+      topic: "greetings-and-introductions",
     },
     {
       title: "Basics of Grammar: Pronouns and Articles",
@@ -20,6 +20,7 @@ export const a1Blocks: Record<
         href: "/en/students/self-study/a1/basics-of-grammar",
         label: "Start exercises",
       },
+      topic: "basics-of-grammar",
     },
     {
       title: "Verbs 'être' and 'avoir' in Present Tense",
@@ -29,6 +30,7 @@ export const a1Blocks: Record<
         href: "/en/students/self-study/a1/verbs-etre-and-avoir",
         label: "Start exercises",
       },
+      topic: "verbs-etre-and-avoir",
     },
     {
       title: "Numbers and Time",
@@ -38,6 +40,7 @@ export const a1Blocks: Record<
         href: "/en/students/self-study/a1/numbers-and-time",
         label: "Start exercises",
       },
+      topic: "numbers-and-time",
     },
     {
       title: "Food and Drinks",
@@ -47,6 +50,7 @@ export const a1Blocks: Record<
         href: "/en/students/self-study/a1/food-and-drinks",
         label: "Start exercises",
       },
+      topic: "food-and-drinks",
     },
     {
       title: "Family and Relationships",
@@ -56,6 +60,7 @@ export const a1Blocks: Record<
         href: "/en/students/self-study/a1/family-and-relationships",
         label: "Start exercises",
       },
+      topic: "family-and-relationships",
     },
     {
       title: "Places in the City and Directions",
@@ -65,6 +70,7 @@ export const a1Blocks: Record<
         href: "/en/students/self-study/a1/places-in-the-city-and-directions",
         label: "Start exercises",
       },
+      topic: "places-in-the-city-and-directions",
     },
     {
       title: "Description of Appearance and Character",
@@ -74,6 +80,7 @@ export const a1Blocks: Record<
         href: "/en/students/self-study/a1/description-of-appearance-and-character",
         label: "Start exercises",
       },
+      topic: "description-of-appearance-and-character",
     },
     {
       title: "Weather and Seasons",
@@ -83,6 +90,7 @@ export const a1Blocks: Record<
         href: "/en/students/self-study/a1/weather-and-seasons",
         label: "Start exercises",
       },
+      topic: "weather-and-seasons",
     },
     {
       title: "Travel and Transport",
@@ -92,6 +100,7 @@ export const a1Blocks: Record<
         href: "/en/students/self-study/a1/travel-and-transport",
         label: "Start exercises",
       },
+      topic: "travel-and-transport",
     },
   ],
   ru: [
@@ -103,6 +112,7 @@ export const a1Blocks: Record<
         href: "/ru/students/self-study/a1/greetings-and-introductions",
         label: "Hачать упражнения",
       },
+      topic: "greetings-and-introductions",
     },
     {
       title: "Основы грамматики: местоимения и артикли",
@@ -112,6 +122,7 @@ export const a1Blocks: Record<
         href: "/ru/students/self-study/a1/basics-of-grammar",
         label: "Hачать упражнения",
       },
+      topic: "basics-of-grammar",
     },
     {
       title: "Глаголы 'être' и 'avoir' в настоящем времени",
@@ -121,6 +132,7 @@ export const a1Blocks: Record<
         href: "/ru/students/self-study/a1/verbs-etre-and-avoir",
         label: "Hачать упражнения",
       },
+      topic: "verbs-etre-and-avoir",
     },
     {
       title: "Числа и время",
@@ -130,6 +142,7 @@ export const a1Blocks: Record<
         href: "/ru/students/self-study/a1/numbers-and-time",
         label: "Hачать упражнения",
       },
+      topic: "numbers-and-time",
     },
     {
       title: "Еда и напитки",
@@ -139,6 +152,7 @@ export const a1Blocks: Record<
         href: "/ru/students/self-study/a1/food-and-drinks",
         label: "Hачать упражнения",
       },
+      topic: "food-and-drinks",
     },
     {
       title: "Семья и отношения",
@@ -148,6 +162,7 @@ export const a1Blocks: Record<
         href: "/ru/students/self-study/a1/family-and-relationships",
         label: "Hачать упражнения",
       },
+      topic: "family-and-relationships",
     },
     {
       title: "Места в городе и направления",
@@ -157,6 +172,7 @@ export const a1Blocks: Record<
         href: "/ru/students/self-study/a1/places-in-the-city-and-directions",
         label: "Hачать упражнения",
       },
+      topic: "places-in-the-city-and-directions",
     },
     {
       title: "Описание внешности и характера",
@@ -166,6 +182,7 @@ export const a1Blocks: Record<
         href: "/ru/students/self-study/a1/description-of-appearance-and-character",
         label: "Hачать упражнения",
       },
+      topic: "description-of-appearance-and-character",
     },
     {
       title: "Погода и время года",
@@ -175,6 +192,7 @@ export const a1Blocks: Record<
         href: "/ru/students/self-study/a1/weather-and-seasons",
         label: "Hачать упражнения",
       },
+      topic: "weather-and-seasons",
     },
     {
       title: "Путешествия и транспорт",
@@ -184,6 +202,7 @@ export const a1Blocks: Record<
         href: "/ru/students/self-study/a1/travel-and-transport",
         label: "Hачать упражнения",
       },
+      topic: "travel-and-transport",
     },
   ],
   fr: [
@@ -195,6 +214,7 @@ export const a1Blocks: Record<
         href: "/fr/students/self-study/a1/greetings-and-introductions",
         label: "Commencer les exercices",
       },
+      topic: "greetings-and-introductions",
     },
     {
       title: "Bases de la Grammaire: Pronoms et Articles",
@@ -204,6 +224,7 @@ export const a1Blocks: Record<
         href: "/fr/students/self-study/a1/basics-of-grammar",
         label: "Commencer les exercices",
       },
+      topic: "basics-of-grammar",
     },
     {
       title: "Verbes 'être' et 'avoir' au Présent",
@@ -213,6 +234,7 @@ export const a1Blocks: Record<
         href: "/fr/students/self-study/a1/verbs-etre-and-avoir",
         label: "Commencer les exercices",
       },
+      topic: "verbs-etre-and-avoir",
     },
     {
       title: "Nombres et Temps",
@@ -222,6 +244,7 @@ export const a1Blocks: Record<
         href: "/fr/students/self-study/a1/numbers-and-time",
         label: "Commencer les exercices",
       },
+      topic: "numbers-and-time",
     },
     {
       title: "Nourriture et Boissons",
@@ -231,6 +254,7 @@ export const a1Blocks: Record<
         href: "/fr/students/self-study/a1/food-and-drinks",
         label: "Commencer les exercices",
       },
+      topic: "food-and-drinks",
     },
     {
       title: "Famille et Relations",
@@ -240,6 +264,7 @@ export const a1Blocks: Record<
         href: "/fr/students/self-study/a1/family-and-relationships",
         label: "Commencer les exercices",
       },
+      topic: "family-and-relationships",
     },
     {
       title: "Lieux dans la Ville et Directions",
@@ -249,6 +274,7 @@ export const a1Blocks: Record<
         href: "/fr/students/self-study/a1/places-in-the-city-and-directions",
         label: "Commencer les exercices",
       },
+      topic: "places-in-the-city-and-directions",
     },
     {
       title: "Description de l'Apparence et du Caractère",
@@ -258,6 +284,7 @@ export const a1Blocks: Record<
         href: "/fr/students/self-study/a1/description-of-appearance-and-character",
         label: "Commencer les exercices",
       },
+      topic: "description-of-appearance-and-character",
     },
     {
       title: "Météo et Saisons",
@@ -267,6 +294,7 @@ export const a1Blocks: Record<
         href: "/fr/students/self-study/a1/weather-and-seasons",
         label: "Commencer les exercices",
       },
+      topic: "weather-and-seasons",
     },
     {
       title: "Voyages et Transports",
@@ -276,6 +304,7 @@ export const a1Blocks: Record<
         href: "/fr/students/self-study/a1/travel-and-transport",
         label: "Commencer les exercices",
       },
+      topic: "travel-and-transport",
     },
   ],
   ka: [
@@ -287,6 +316,7 @@ export const a1Blocks: Record<
         href: "/ka/students/self-study/a1/greetings-and-introductions",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "greetings-and-introductions",
     },
     {
       title: "გრამატიკის საფუძვლები: ნაცვალსახელები და არტიკლები",
@@ -296,6 +326,7 @@ export const a1Blocks: Record<
         href: "/ka/students/self-study/a1/basics-of-grammar",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "basics-of-grammar",
     },
     {
       title: "ზმნები 'être' და 'avoir' აწმყო დროში",
@@ -305,6 +336,7 @@ export const a1Blocks: Record<
         href: "/ka/students/self-study/a1/verbs-etre-and-avoir",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "verbs-etre-and-avoir",
     },
     {
       title: "რიცხვები და დრო",
@@ -314,6 +346,7 @@ export const a1Blocks: Record<
         href: "/ka/students/self-study/a1/numbers-and-time",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "numbers-and-time",
     },
     {
       title: "საკვები და სასმელები",
@@ -323,6 +356,7 @@ export const a1Blocks: Record<
         href: "/ka/students/self-study/a1/food-and-drinks",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "food-and-drinks",
     },
     {
       title: "ოჯახი და ურთიერთობები",
@@ -332,6 +366,7 @@ export const a1Blocks: Record<
         href: "/ka/students/self-study/a1/family-and-relationships",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "family-and-relationships",
     },
     {
       title: "ადგილები ქალაქში და მიმართულებები",
@@ -341,6 +376,7 @@ export const a1Blocks: Record<
         href: "/ka/students/self-study/a1/places-in-the-city-and-directions",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "places-in-the-city-and-directions",
     },
     {
       title: "გარეგნობისა და ხასიათის აღწერა",
@@ -350,6 +386,7 @@ export const a1Blocks: Record<
         href: "/ka/students/self-study/a1/description-of-appearance-and-character",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "description-of-appearance-and-character",
     },
     {
       title: "ამინდი და წელიწადის დროები",
@@ -359,6 +396,7 @@ export const a1Blocks: Record<
         href: "/ka/students/self-study/a1/weather-and-seasons",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "weather-and-seasons",
     },
     {
       title: "მოგზაურობა და ტრანსპორტი",
@@ -368,6 +406,7 @@ export const a1Blocks: Record<
         href: "/ka/students/self-study/a1/travel-and-transport",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "travel-and-transport",
     },
   ],
 };

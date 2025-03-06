@@ -1,7 +1,6 @@
-export const b1Blocks: Record<
-  string,
-  { title: string; content: string; link: { href: string; label: string } }[]
-> = {
+import { TopicBlock } from "./types";
+
+export const b1Blocks: Record<string, TopicBlock[]> = {
   en: [
     {
       title: "Travel Experiences",
@@ -11,6 +10,7 @@ export const b1Blocks: Record<
         href: "/en/students/self-study/b1/travel-experiences",
         label: "Start exercises",
       },
+      topic: "travel-experiences",
     },
     {
       title: "Work and Career",
@@ -20,6 +20,7 @@ export const b1Blocks: Record<
         href: "/en/students/self-study/b1/work-and-career",
         label: "Start exercises",
       },
+      topic: "work-and-career",
     },
     {
       title: "Education and Learning",
@@ -29,6 +30,7 @@ export const b1Blocks: Record<
         href: "/en/students/self-study/b1/education-and-learning",
         label: "Start exercises",
       },
+      topic: "education-and-learning",
     },
     {
       title: "Health and Lifestyle",
@@ -38,6 +40,7 @@ export const b1Blocks: Record<
         href: "/en/students/self-study/b1/health-and-lifestyle",
         label: "Start exercises",
       },
+      topic: "health-and-lifestyle",
     },
     {
       title: "Technology and Innovation",
@@ -47,6 +50,7 @@ export const b1Blocks: Record<
         href: "/en/students/self-study/b1/technology-and-innovation",
         label: "Start exercises",
       },
+      topic: "technology-and-innovation",
     },
     {
       title: "Environment and Nature",
@@ -56,6 +60,7 @@ export const b1Blocks: Record<
         href: "/en/students/self-study/b1/environment-and-nature",
         label: "Start exercises",
       },
+      topic: "environment-and-nature",
     },
     {
       title: "Culture and Traditions",
@@ -65,6 +70,7 @@ export const b1Blocks: Record<
         href: "/en/students/self-study/b1/culture-and-traditions",
         label: "Start exercises",
       },
+      topic: "culture-and-traditions",
     },
     {
       title: "Media and Entertainment",
@@ -74,6 +80,7 @@ export const b1Blocks: Record<
         href: "/en/students/self-study/b1/media-and-entertainment",
         label: "Start exercises",
       },
+      topic: "media-and-entertainment",
     },
     {
       title: "Social Issues",
@@ -83,6 +90,7 @@ export const b1Blocks: Record<
         href: "/en/students/self-study/b1/social-issues",
         label: "Start exercises",
       },
+      topic: "social-issues",
     },
     {
       title: "Future Plans and Ambitions",
@@ -92,6 +100,7 @@ export const b1Blocks: Record<
         href: "/en/students/self-study/b1/future-plans-and-ambitions",
         label: "Start exercises",
       },
+      topic: "future-plans-and-ambitions",
     },
   ],
   ru: [
@@ -103,6 +112,7 @@ export const b1Blocks: Record<
         href: "/ru/students/self-study/b1/travel-experiences",
         label: "Hачать упражнения",
       },
+      topic: "travel-experiences",
     },
     {
       title: "Работа и карьера",
@@ -112,6 +122,7 @@ export const b1Blocks: Record<
         href: "/ru/students/self-study/b1/work-and-career",
         label: "Hачать упражнения",
       },
+      topic: "work-and-career",
     },
     {
       title: "Образование и обучение",
@@ -121,6 +132,7 @@ export const b1Blocks: Record<
         href: "/ru/students/self-study/b1/education-and-learning",
         label: "Hачать упражнения",
       },
+      topic: "education-and-learning",
     },
     {
       title: "Здоровье и образ жизни",
@@ -130,6 +142,7 @@ export const b1Blocks: Record<
         href: "/ru/students/self-study/b1/health-and-lifestyle",
         label: "Hачать упражнения",
       },
+      topic: "health-and-lifestyle",
     },
     {
       title: "Технологии и инновации",
@@ -139,6 +152,7 @@ export const b1Blocks: Record<
         href: "/ru/students/self-study/b1/technology-and-innovation",
         label: "Hачать упражнения",
       },
+      topic: "technology-and-innovation",
     },
     {
       title: "Окружающая среда и природа",
@@ -148,6 +162,7 @@ export const b1Blocks: Record<
         href: "/ru/students/self-study/b1/environment-and-nature",
         label: "Hачать упражнения",
       },
+      topic: "environment-and-nature",
     },
     {
       title: "Культура и традиции",
@@ -157,6 +172,7 @@ export const b1Blocks: Record<
         href: "/ru/students/self-study/b1/culture-and-traditions",
         label: "Hачать упражнения",
       },
+      topic: "culture-and-traditions",
     },
     {
       title: "Медиа и развлечения",
@@ -166,6 +182,7 @@ export const b1Blocks: Record<
         href: "/ru/students/self-study/b1/media-and-entertainment",
         label: "Hачать упражнения",
       },
+      topic: "media-and-entertainment",
     },
     {
       title: "Социальные проблемы",
@@ -175,6 +192,7 @@ export const b1Blocks: Record<
         href: "/ru/students/self-study/b1/social-issues",
         label: "Hачать упражнения",
       },
+      topic: "social-issues",
     },
     {
       title: "Планы на будущее и амбиции",
@@ -184,6 +202,7 @@ export const b1Blocks: Record<
         href: "/ru/students/self-study/b1/future-plans-and-ambitions",
         label: "Hачать упражнения",
       },
+      topic: "future-plans-and-ambitions",
     },
   ],
   fr: [
@@ -195,6 +214,7 @@ export const b1Blocks: Record<
         href: "/fr/students/self-study/b1/travel-experiences",
         label: "Commencer les exercices",
       },
+      topic: "travel-experiences",
     },
     {
       title: "Travail et carrière",
@@ -204,6 +224,7 @@ export const b1Blocks: Record<
         href: "/fr/students/self-study/b1/work-and-career",
         label: "Commencer les exercices",
       },
+      topic: "work-and-career",
     },
     {
       title: "Éducation et apprentissage",
@@ -213,6 +234,7 @@ export const b1Blocks: Record<
         href: "/fr/students/self-study/b1/education-and-learning",
         label: "Commencer les exercices",
       },
+      topic: "education-and-learning",
     },
     {
       title: "Santé et mode de vie",
@@ -222,6 +244,7 @@ export const b1Blocks: Record<
         href: "/fr/students/self-study/b1/health-and-lifestyle",
         label: "Commencer les exercices",
       },
+      topic: "health-and-lifestyle",
     },
     {
       title: "Technologie et innovation",
@@ -231,6 +254,7 @@ export const b1Blocks: Record<
         href: "/fr/students/self-study/b1/technology-and-innovation",
         label: "Commencer les exercices",
       },
+      topic: "technology-and-innovation",
     },
     {
       title: "Environnement et nature",
@@ -240,6 +264,7 @@ export const b1Blocks: Record<
         href: "/fr/students/self-study/b1/environment-and-nature",
         label: "Commencer les exercices",
       },
+      topic: "environment-and-nature",
     },
     {
       title: "Culture et traditions",
@@ -249,6 +274,7 @@ export const b1Blocks: Record<
         href: "/fr/students/self-study/b1/culture-and-traditions",
         label: "Commencer les exercices",
       },
+      topic: "culture-and-traditions",
     },
     {
       title: "Médias et divertissement",
@@ -258,6 +284,7 @@ export const b1Blocks: Record<
         href: "/fr/students/self-study/b1/media-and-entertainment",
         label: "Commencer les exercices",
       },
+      topic: "media-and-entertainment",
     },
     {
       title: "Problèmes sociaux",
@@ -267,6 +294,7 @@ export const b1Blocks: Record<
         href: "/fr/students/self-study/b1/social-issues",
         label: "Commencer les exercices",
       },
+      topic: "social-issues",
     },
     {
       title: "Plans futurs et ambitions",
@@ -276,6 +304,7 @@ export const b1Blocks: Record<
         href: "/fr/students/self-study/b1/future-plans-and-ambitions",
         label: "Commencer les exercices",
       },
+      topic: "future-plans-and-ambitions",
     },
   ],
   ka: [
@@ -287,6 +316,7 @@ export const b1Blocks: Record<
         href: "/ka/students/self-study/b1/travel-experiences",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "travel-experiences",
     },
     {
       title: "სამუშაო და კარიერა",
@@ -296,6 +326,7 @@ export const b1Blocks: Record<
         href: "/ka/students/self-study/b1/work-and-career",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "work-and-career",
     },
     {
       title: "განათლება და სწავლა",
@@ -305,6 +336,7 @@ export const b1Blocks: Record<
         href: "/ka/students/self-study/b1/education-and-learning",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "education-and-learning",
     },
     {
       title: "ჯანმრთელობა და ცხოვრების წესი",
@@ -314,6 +346,7 @@ export const b1Blocks: Record<
         href: "/ka/students/self-study/b1/health-and-lifestyle",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "health-and-lifestyle",
     },
     {
       title: "ტექნოლოგია და ინოვაცია",
@@ -323,6 +356,7 @@ export const b1Blocks: Record<
         href: "/ka/students/self-study/b1/technology-and-innovation",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "technology-and-innovation",
     },
     {
       title: "გარემო და ბუნება",
@@ -332,6 +366,7 @@ export const b1Blocks: Record<
         href: "/ka/students/self-study/b1/environment-and-nature",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "environment-and-nature",
     },
     {
       title: "კულტურა და ტრადიციები",
@@ -341,6 +376,7 @@ export const b1Blocks: Record<
         href: "/ka/students/self-study/b1/culture-and-traditions",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "culture-and-traditions",
     },
     {
       title: "მედია და გართობა",
@@ -350,6 +386,7 @@ export const b1Blocks: Record<
         href: "/ka/students/self-study/b1/media-and-entertainment",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "media-and-entertainment",
     },
     {
       title: "სოციალური საკითხები",
@@ -359,6 +396,7 @@ export const b1Blocks: Record<
         href: "/ka/students/self-study/b1/social-issues",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "social-issues",
     },
     {
       title: "მომავალი გეგმები და ამბიციები",
@@ -368,6 +406,7 @@ export const b1Blocks: Record<
         href: "/ka/students/self-study/b1/future-plans-and-ambitions",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "future-plans-and-ambitions",
     },
   ],
 };

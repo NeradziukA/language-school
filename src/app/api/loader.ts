@@ -4,6 +4,7 @@ import { selfStudy } from "./self-study";
 import { a1Blocks } from "./a1-blocks";
 import { a2Blocks } from "./a2-blocks";
 import { b1Blocks } from "./b1-blocks";
+import { TopicBlock } from "./types";
 
 export type PageKey =
   | "offer"
@@ -16,7 +17,7 @@ export type PageKey =
 export function loadApi(
   pageKey: PageKey,
   locale: string
-): { title: string; content: string }[] {
+): ({ title: string; content: string } | TopicBlock)[] {
   if (pageKey === "offer") {
     return offers[locale];
   }
@@ -36,4 +37,18 @@ export function loadApi(
     return b1Blocks[locale];
   }
   return [];
+}
+
+export function getTopic(
+  locale: string,
+  level: string,
+  topic: string
+): TopicBlock | undefined {
+  const data: TopicBlock[] = loadApi(
+    `${level?.toLocaleLowerCase()}-blocks` as PageKey,
+    locale
+  ) as TopicBlock[];
+  console.log(`${level?.toLocaleLowerCase()}-blocks`);
+  const safeTopic = data?.find((block) => block.topic === topic);
+  return safeTopic;
 }

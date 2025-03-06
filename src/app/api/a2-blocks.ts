@@ -1,7 +1,6 @@
-export const a2Blocks: Record<
-  string,
-  { title: string; content: string; link: { href: string; label: string } }[]
-> = {
+import { TopicBlock } from "./types";
+
+export const a2Blocks: Record<string, TopicBlock[]> = {
   en: [
     {
       title: "Daily Routines",
@@ -11,6 +10,7 @@ export const a2Blocks: Record<
         href: "/en/students/self-study/a2/daily-routines",
         label: "Start exercises",
       },
+      topic: "daily-routines",
     },
     {
       title: "Shopping and Prices",
@@ -20,6 +20,7 @@ export const a2Blocks: Record<
         href: "/en/students/self-study/a2/shopping-and-prices",
         label: "Start exercises",
       },
+      topic: "shopping-and-prices",
     },
     {
       title: "Health and Fitness",
@@ -29,6 +30,7 @@ export const a2Blocks: Record<
         href: "/en/students/self-study/a2/health-and-fitness",
         label: "Start exercises",
       },
+      topic: "health-and-fitness",
     },
     {
       title: "Travel and Holidays",
@@ -38,6 +40,7 @@ export const a2Blocks: Record<
         href: "/en/students/self-study/a2/travel-and-holidays",
         label: "Start exercises",
       },
+      topic: "travel-and-holidays",
     },
     {
       title: "Food and Cooking",
@@ -47,6 +50,7 @@ export const a2Blocks: Record<
         href: "/en/students/self-study/a2/food-and-cooking",
         label: "Start exercises",
       },
+      topic: "food-and-cooking",
     },
     {
       title: "Work and Professions",
@@ -56,6 +60,7 @@ export const a2Blocks: Record<
         href: "/en/students/self-study/a2/work-and-professions",
         label: "Start exercises",
       },
+      topic: "work-and-professions",
     },
     {
       title: "Hobbies and Interests",
@@ -65,6 +70,7 @@ export const a2Blocks: Record<
         href: "/en/students/self-study/a2/hobbies-and-interests",
         label: "Start exercises",
       },
+      topic: "hobbies-and-interests",
     },
     {
       title: "Weather and Seasons",
@@ -74,6 +80,7 @@ export const a2Blocks: Record<
         href: "/en/students/self-study/a2/weather-and-seasons",
         label: "Start exercises",
       },
+      topic: "weather-and-seasons",
     },
     {
       title: "Technology and Gadgets",
@@ -83,6 +90,7 @@ export const a2Blocks: Record<
         href: "/en/students/self-study/a2/technology-and-gadgets",
         label: "Start exercises",
       },
+      topic: "technology-and-gadgets",
     },
     {
       title: "Social Media and Communication",
@@ -92,6 +100,7 @@ export const a2Blocks: Record<
         href: "/en/students/self-study/a2/social-media-and-communication",
         label: "Start exercises",
       },
+      topic: "social-media-and-communication",
     },
   ],
   ru: [
@@ -103,6 +112,7 @@ export const a2Blocks: Record<
         href: "/ru/students/self-study/a2/daily-routines",
         label: "Hачать упражнения",
       },
+      topic: "daily-routines",
     },
     {
       title: "Покупки и цены",
@@ -112,6 +122,7 @@ export const a2Blocks: Record<
         href: "/ru/students/self-study/a2/shopping-and-prices",
         label: "Hачать упражнения",
       },
+      topic: "shopping-and-prices",
     },
     {
       title: "Здоровье и фитнес",
@@ -121,6 +132,7 @@ export const a2Blocks: Record<
         href: "/ru/students/self-study/a2/health-and-fitness",
         label: "Hачать упражнения",
       },
+      topic: "health-and-fitness",
     },
     {
       title: "Путешествия и каникулы",
@@ -130,6 +142,7 @@ export const a2Blocks: Record<
         href: "/ru/students/self-study/a2/travel-and-holidays",
         label: "Hачать упражнения",
       },
+      topic: "travel-and-holidays",
     },
     {
       title: "Еда и кулинария",
@@ -139,6 +152,7 @@ export const a2Blocks: Record<
         href: "/ru/students/self-study/a2/food-and-cooking",
         label: "Hачать упражнения",
       },
+      topic: "food-and-cooking",
     },
     {
       title: "Работа и профессии",
@@ -148,6 +162,7 @@ export const a2Blocks: Record<
         href: "/ru/students/self-study/a2/work-and-professions",
         label: "Hачать упражнения",
       },
+      topic: "work-and-professions",
     },
     {
       title: "Хобби и интересы",
@@ -157,6 +172,7 @@ export const a2Blocks: Record<
         href: "/ru/students/self-study/a2/hobbies-and-interests",
         label: "Hачать упражнения",
       },
+      topic: "hobbies-and-interests",
     },
     {
       title: "Погода и времена года",
@@ -166,6 +182,7 @@ export const a2Blocks: Record<
         href: "/ru/students/self-study/a2/weather-and-seasons",
         label: "Hачать упражнения",
       },
+      topic: "weather-and-seasons",
     },
     {
       title: "Технологии и гаджеты",
@@ -175,6 +192,7 @@ export const a2Blocks: Record<
         href: "/ru/students/self-study/a2/technology-and-gadgets",
         label: "Hачать упражнения",
       },
+      topic: "technology-and-gadgets",
     },
     {
       title: "Социальные сети и коммуникация",
@@ -184,6 +202,7 @@ export const a2Blocks: Record<
         href: "/ru/students/self-study/a2/social-media-and-communication",
         label: "Hачать упражнения",
       },
+      topic: "social-media-and-communication",
     },
   ],
   fr: [
@@ -195,6 +214,7 @@ export const a2Blocks: Record<
         href: "/fr/students/self-study/a2/daily-routines",
         label: "Commencer les exercices",
       },
+      topic: "daily-routines",
     },
     {
       title: "Achats et prix",
@@ -204,6 +224,7 @@ export const a2Blocks: Record<
         href: "/fr/students/self-study/a2/shopping-and-prices",
         label: "Commencer les exercices",
       },
+      topic: "shopping-and-prices",
     },
     {
       title: "Santé et forme physique",
@@ -213,6 +234,7 @@ export const a2Blocks: Record<
         href: "/fr/students/self-study/a2/health-and-fitness",
         label: "Commencer les exercices",
       },
+      topic: "health-and-fitness",
     },
     {
       title: "Voyages et vacances",
@@ -222,6 +244,7 @@ export const a2Blocks: Record<
         href: "/fr/students/self-study/a2/travel-and-holidays",
         label: "Commencer les exercices",
       },
+      topic: "travel-and-holidays",
     },
     {
       title: "Nourriture et cuisine",
@@ -231,6 +254,7 @@ export const a2Blocks: Record<
         href: "/fr/students/self-study/a2/food-and-cooking",
         label: "Commencer les exercices",
       },
+      topic: "food-and-cooking",
     },
     {
       title: "Travail et professions",
@@ -240,6 +264,7 @@ export const a2Blocks: Record<
         href: "/fr/students/self-study/a2/work-and-professions",
         label: "Commencer les exercices",
       },
+      topic: "work-and-professions",
     },
     {
       title: "Loisirs et intérêts",
@@ -249,6 +274,7 @@ export const a2Blocks: Record<
         href: "/fr/students/self-study/a2/hobbies-and-interests",
         label: "Commencer les exercices",
       },
+      topic: "hobbies-and-interests",
     },
     {
       title: "Météo et saisons",
@@ -258,6 +284,7 @@ export const a2Blocks: Record<
         href: "/fr/students/self-study/a2/weather-and-seasons",
         label: "Commencer les exercices",
       },
+      topic: "weather-and-seasons",
     },
     {
       title: "Technologie et gadgets",
@@ -267,6 +294,7 @@ export const a2Blocks: Record<
         href: "/fr/students/self-study/a2/technology-and-gadgets",
         label: "Commencer les exercices",
       },
+      topic: "technology-and-gadgets",
     },
     {
       title: "Réseaux sociaux et communication",
@@ -276,6 +304,7 @@ export const a2Blocks: Record<
         href: "/fr/students/self-study/a2/social-media-and-communication",
         label: "Commencer les exercices",
       },
+      topic: "social-media-and-communication",
     },
   ],
   ka: [
@@ -287,6 +316,7 @@ export const a2Blocks: Record<
         href: "/ka/students/self-study/a2/daily-routines",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "daily-routines",
     },
     {
       title: "შოპინგი და ფასები",
@@ -296,6 +326,7 @@ export const a2Blocks: Record<
         href: "/ka/students/self-study/a2/shopping-and-prices",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "shopping-and-prices",
     },
     {
       title: "ჯანმრთელობა და ფიტნესი",
@@ -305,6 +336,7 @@ export const a2Blocks: Record<
         href: "/ka/students/self-study/a2/health-and-fitness",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "health-and-fitness",
     },
     {
       title: "მოგზაურობა და არდადეგები",
@@ -314,6 +346,7 @@ export const a2Blocks: Record<
         href: "/ka/students/self-study/a2/travel-and-holidays",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "travel-and-holidays",
     },
     {
       title: "საკვები და კულინარია",
@@ -323,6 +356,7 @@ export const a2Blocks: Record<
         href: "/ka/students/self-study/a2/food-and-cooking",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "food-and-cooking",
     },
     {
       title: "სამუშაო და პროფესიები",
@@ -332,6 +366,7 @@ export const a2Blocks: Record<
         href: "/ka/students/self-study/a2/work-and-professions",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "work-and-professions",
     },
     {
       title: "ჰობი და ინტერესები",
@@ -341,6 +376,7 @@ export const a2Blocks: Record<
         href: "/ka/students/self-study/a2/hobbies-and-interests",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "hobbies-and-interests",
     },
     {
       title: "ამინდი და წელიწადის დროები",
@@ -350,6 +386,7 @@ export const a2Blocks: Record<
         href: "/ka/students/self-study/a2/weather-and-seasons",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "weather-and-seasons",
     },
     {
       title: "ტექნოლოგიები და გაჯეტები",
@@ -359,6 +396,7 @@ export const a2Blocks: Record<
         href: "/ka/students/self-study/a2/technology-and-gadgets",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "technology-and-gadgets",
     },
     {
       title: "სოციალური მედია და კომუნიკაცია",
@@ -368,6 +406,7 @@ export const a2Blocks: Record<
         href: "/ka/students/self-study/a2/social-media-and-communication",
         label: "ვარჯიშების დაწყება",
       },
+      topic: "social-media-and-communication",
     },
   ],
 };
