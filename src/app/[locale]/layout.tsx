@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Footer, Header } from "@components/server";
+import { Footer } from "@components/server";
+import { Header } from "@components/client";
 import { I18nProviderClient } from "@locales/client";
 import { setStaticParamsLocale } from "next-international/server";
 import "./globals.css";

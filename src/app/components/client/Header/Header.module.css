@@ -3,7 +3,7 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  gap: 10px;
   align-items: center;
   max-width: 100%;
   width: 100%;
@@ -30,6 +30,12 @@
 
 .link {
   overflow: hidden;
+  flex-basis: min-content;
+  white-space: nowrap;
+}
+
+.active {
+  color: var(--text-second);
 }
 
 @media (max-width: 800px) {

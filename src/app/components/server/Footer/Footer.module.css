@@ -1,8 +1,16 @@
 .footer {
-  font-size: 0.75rem;
   align-items: center;
   width: 100%;
   background-color: var(--background-light);
   padding: 15px;
   text-align: center;
+}
+
+.label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.link {
+  overflow: hidden;
 }

@@ -12,7 +12,12 @@ export default {
     },
     contact: "Appelez-moi",
   },
-  menu: { home: "Accueil", offer: "Offre", contact: "Contact" },
+  menu: {
+    home: "Accueil",
+    offer: "Offre",
+    contact: "Contact",
+    students: "Aux étudiants",
+  },
   meta: {
     home: {
       title: "Tuteur de français",
@@ -28,6 +33,11 @@ export default {
       title: "Contacts",
       description:
         "Apprenez le français avec des leçons personnalisées d'un tuteur expérimenté",
+    },
+    selfStudy: {
+      title: "Auto-apprentissage",
+      description:
+        "Apprenez le français de manière autonome avec nos ressources et matériels, en utilisant LLM pour l'apprentissage",
     },
   },
 } as const;

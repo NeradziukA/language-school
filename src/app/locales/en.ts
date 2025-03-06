@@ -13,7 +13,12 @@ export default {
 
     contact: "Call me",
   },
-  menu: { home: "Home", offer: "Offer", contact: "Contact" },
+  menu: {
+    home: "Home",
+    offer: "Offer",
+    contact: "Contact",
+    students: "To Students",
+  },
   meta: {
     home: {
       title: "French Tutor",
@@ -29,6 +34,11 @@ export default {
       title: "Contacts",
       description:
         "Learn French with personalized lessons from an experienced tutor",
+    },
+    selfStudy: {
+      title: "Self-Study",
+      description:
+        "Learn French independently with our resources and materials, using LLM for learning",
     },
   },
 } as const;

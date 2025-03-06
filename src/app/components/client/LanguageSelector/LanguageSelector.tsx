@@ -4,7 +4,7 @@ import styles from "./LanguageSelector.module.css";
 import { useRouter, usePathname } from "next/navigation";
 import Cookies from "js-cookie";
 
-function LanguageSelector() {
+export function LanguageSelector() {
   const router = useRouter();
   const pathname = usePathname();
   const [language, setLanguage] = useState<string>();
@@ -44,5 +44,3 @@ function LanguageSelector() {
     </select>
   );
 }
-
-export default LanguageSelector;
