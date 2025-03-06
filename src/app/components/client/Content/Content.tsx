@@ -13,7 +13,7 @@ type Offer = {
 export function Content({
   pageKey,
   options = {},
-}: Readonly<{ pageKey: PageKey; options: { extra?: ReactNode } }>) {
+}: Readonly<{ pageKey: PageKey; options?: { extra?: ReactNode } }>) {
   const locale = useCurrentLocale();
   const content = loadApi(pageKey, locale);
   const { extra } = options;

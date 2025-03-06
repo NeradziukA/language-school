@@ -25,11 +25,13 @@ const validLevels: { [key: string]: string } = {
   B1: "B1",
 };
 
-export default function SelfStudyPage({
+export default async function SelfStudyPage({
   params,
-}: Readonly<{ params: { level: string } }>) {
+}: Readonly<{
+  params: Promise<{ level: string }>;
+}>) {
   const pageKey = "a1-blocks";
-  const { level } = params;
+  const { level } = await params;
 
   return (
     <main className={styles.content}>
