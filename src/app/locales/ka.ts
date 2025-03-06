@@ -1,4 +1,5 @@
 export default {
+  exercisesLoading: "თქვენი პერსონალური სავარჯიშოები იქმნება...",
   page: {
     home: {
       asideTile: {

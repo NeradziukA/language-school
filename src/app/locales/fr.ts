@@ -1,4 +1,5 @@
 export default {
+  exercisesLoading: "Vos exercices personnalisés sont en cours de création...",
   page: {
     home: {
       asideTile: {

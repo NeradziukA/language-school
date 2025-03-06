@@ -2,6 +2,11 @@ import OpenAI from "openai";
 import { z } from "zod";
 import { zodResponseFormat } from "openai/helpers/zod";
 
+const exercisesCache = {
+  timestamp: 0,
+  exercises: [] as { question: string; answers: string[] }[] | undefined,
+};
+
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
@@ -20,6 +25,13 @@ export async function generateExercises(
   level: string,
   locale: string
 ) {
+  const timestamp = Date.now();
+
+  if (exercisesCache.timestamp > timestamp - 1000 * 30) {
+    return exercisesCache.exercises;
+  }
+
+  exercisesCache.timestamp = timestamp;
   const response = await openai.beta.chat.completions.parse({
     model: "gpt-4o-mini",
     store: true,
@@ -42,6 +54,6 @@ export async function generateExercises(
     ],
     response_format: zodResponseFormat(Exercises, "exercises"),
   });
-
-  return response.choices[0].message.parsed;
+  exercisesCache.exercises = response.choices[0].message.parsed?.exercises;
+  return exercisesCache.exercises;
 }

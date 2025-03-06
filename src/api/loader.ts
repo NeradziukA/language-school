@@ -48,7 +48,7 @@ export function getTopic(
     `${level?.toLocaleLowerCase()}-blocks` as PageKey,
     locale
   ) as TopicBlock[];
-  console.log(`${level?.toLocaleLowerCase()}-blocks`);
+
   const safeTopic = data?.find((block) => block.topic === topic);
   return safeTopic;
 }

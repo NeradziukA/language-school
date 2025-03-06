@@ -40,14 +40,14 @@ export default async function SelfStudyPage({
   const safeTopic = getTopic(locale, safeLevel, topic);
   setStaticParamsLocale(locale);
 
-  const response = await generateExercises(topic, safeLevel, locale);
+  const exercisesLoader = generateExercises(topic, safeLevel, locale);
 
   return (
     <main className={styles.content}>
       <Test
         level={safeLevel}
         topic={safeTopic}
-        exercises={response?.exercises}
+        exercisesLoader={exercisesLoader}
       />
     </main>
   );
