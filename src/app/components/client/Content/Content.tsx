@@ -2,7 +2,7 @@
 import { ReactNode, useEffect } from "react";
 import { useCurrentLocale } from "@/app/locales/client";
 import styles from "./Content.module.css";
-import { loadApi, PageKey } from "@/app/api/loader";
+import { loadApi, PageKey } from "@/api/loader";
 
 type Offer = {
   title: string;

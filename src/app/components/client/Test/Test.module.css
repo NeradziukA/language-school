@@ -7,16 +7,14 @@
 }
 
 .offer {
-    padding: 20px 20px 20px; 
-    background-color: var(--background-light);
-    border-radius: 3px;
-    opacity: 1;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Ensure footer is at the bottom */
-}
+  padding: 20px 20px 20px;
+  background-color: var(--background-light);
+  border-radius: 3px;
+  opacity: 1;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
 
 .title {
   font-weight: bold;
@@ -25,6 +23,10 @@
 .description {
   margin: 10px 0;
   line-height: 1.2;
+}
+
+.list {
+  margin: 0 20px;
 }
 
 @media (max-width: 800px) {

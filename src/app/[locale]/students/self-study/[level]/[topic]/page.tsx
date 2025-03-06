@@ -3,7 +3,8 @@ import { Metadata } from "next";
 import { setStaticParamsLocale } from "next-international/server";
 import styles from "./page.module.css";
 import { Test } from "@/app/components/client";
-import { getTopic } from "@/app/api/loader";
+import { getTopic } from "@/api/loader";
+import { generateExercises } from "@/api/chatgpt";
 
 export async function generateMetadata({
   params,
@@ -39,9 +40,15 @@ export default async function SelfStudyPage({
   const safeTopic = getTopic(locale, safeLevel, topic);
   setStaticParamsLocale(locale);
 
+  const response = await generateExercises(topic, safeLevel, locale);
+
   return (
     <main className={styles.content}>
-      <Test level={safeLevel} topic={safeTopic} />
+      <Test
+        level={safeLevel}
+        topic={safeTopic}
+        exercises={response?.exercises}
+      />
     </main>
   );
 }

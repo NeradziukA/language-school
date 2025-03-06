@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { setStaticParamsLocale } from "next-international/server";
 import styles from "./page.module.css";
 import { Content } from "@/app/components/client";
-import { PageKey } from "@/app/api/loader";
+import { PageKey } from "@/api/loader";
 
 export async function generateMetadata({
   params,
