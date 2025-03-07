@@ -28,16 +28,22 @@ export async function generateExercises(
       {
         role: "system",
         content: `You are creating exercises for learning French. 
-        The exercises should match the student's level. Level of students is ${level}. 
-        Language for questions is ${localeToLanguage(locale.toUpperCase())}.
+        The exercises should match the student's level. 
+        Level of students is ${level}. 
+        Language for questions is 
+        ${localeToLanguage(locale.toUpperCase())}.
         Language for answers is French. 
-        You will be given a topic for the tasks. You need to create 10 exercises. 
+        You will be given a topic for the tasks. 
+        You need to create 10 exercises. 
         For each exercise, you must provide 4 answer choices. 
-        For translation exercises, you must use ${localeToLanguage(
-          locale.toUpperCase()
-        )} for questions, and French for answers. 
-        For grammar exercises, you must provide the correct French grammar rule. 
-        For vocabulary exercises, you must provide the correct definition.`,
+        For translation exercises, you must use
+        ${localeToLanguage(locale.toUpperCase())} 
+        for questions, and French for answers. 
+        For grammar exercises, you must provide the correct French 
+        grammar rule. 
+        For vocabulary exercises, you must provide the correct definition.
+        Avoid personal questions.
+`,
       },
       {
         role: "user",
