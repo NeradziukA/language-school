@@ -10,17 +10,23 @@ const queryCache: {
 
 const useTests = (topic: string, level: string, locale: string) => {
   const [exercises, setExercises] = useState<Exercise[]>([]);
+  const [error, setError] = useState<unknown>();
 
   useEffect(() => {
     const timestamp = new Date().getTime();
 
     const fetchData = async () => {
-      const data: Exercise[] | undefined = await generateExercises(
-        topic,
-        level,
-        locale
-      );
-      setExercises(data || []);
+      try {
+        const data: Exercise[] | undefined = await generateExercises(
+          topic,
+          level,
+          locale
+        );
+        setExercises(data || []);
+      } catch (e) {
+        setExercises([]);
+        setError(setError);
+      }
     };
 
     if (
@@ -36,7 +42,7 @@ const useTests = (topic: string, level: string, locale: string) => {
     fetchData();
   }, [topic, level, locale]);
 
-  return exercises;
+  return { exercises, error };
 };
 
 export default useTests;

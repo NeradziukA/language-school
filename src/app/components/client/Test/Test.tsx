@@ -17,11 +17,15 @@ export function Test({
   const locale = useCurrentLocale();
   const [showValidAnswer, setShowValidAnswer] = useState<number | null>(null);
 
-  const exercises: Exercise[] | undefined = useTests(
-    topic?.content ?? "",
-    level,
-    locale
-  );
+  const { exercises, error } = useTests(topic?.content ?? "", level, locale);
+
+  if (error) {
+    return (
+      <div className={`${styles.content}`}>
+        <div className={styles.offer}>{t("error")}</div>
+      </div>
+    );
+  }
 
   if (!exercises?.length) {
     return (

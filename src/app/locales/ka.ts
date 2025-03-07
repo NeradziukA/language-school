@@ -1,6 +1,7 @@
 export default {
-  showAnswer: "პასუხი",
+  error: "სამწუხაროდ, შეცდომა მოხდა.",
   exercisesLoading: "თქვენი პერსონალური სავარჯიშოები იქმნება...",
+  showAnswer: "პასუხი",
   page: {
     home: {
       asideTile: {
