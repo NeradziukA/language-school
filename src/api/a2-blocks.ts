@@ -5,7 +5,7 @@ export const a2Blocks: Record<string, TopicBlock[]> = {
     {
       title: "Daily Routines",
       content:
-        "Exercises: describing daily activities, using present simple tense, making sentences about routines (I wake up at 7 AM, I go to work).",
+        "Exercises: describing daily activities, using present simple tense, making sentences about routines (I wake up at, take a dinner, go to work).",
       link: {
         href: "/en/students/self-study/a2/daily-routines",
         label: "Start exercises",
@@ -25,7 +25,7 @@ export const a2Blocks: Record<string, TopicBlock[]> = {
     {
       title: "Health and Fitness",
       content:
-        "Exercises: talking about health and fitness routines, using vocabulary related to body parts and common illnesses, making sentences about healthy habits.",
+        "Exercises: talking about health and fitness, using vocabulary related to body parts and common illnesses, making sentences about healthy habits.",
       link: {
         href: "/en/students/self-study/a2/health-and-fitness",
         label: "Start exercises",
@@ -107,7 +107,7 @@ export const a2Blocks: Record<string, TopicBlock[]> = {
     {
       title: "Ежедневные рутины",
       content:
-        "Задания: описание ежедневных действий, использование настоящего простого времени, составление предложений о рутинах (Я просыпаюсь в 7 утра, я иду на работу).",
+        "Задания: описание ежедневных действий, использование настоящего простого времени, составление предложений о расписании на день (Я просыпаюсь утром, завтракаю, иду на работу).",
       link: {
         href: "/ru/students/self-study/a2/daily-routines",
         label: "Hачать упражнения",
@@ -127,7 +127,7 @@ export const a2Blocks: Record<string, TopicBlock[]> = {
     {
       title: "Здоровье и фитнес",
       content:
-        "Задания: разговоры о здоровье и фитнес-рутинах, использование словаря, связанного с частями тела и распространенными болезнями, составление предложений о здоровых привычках.",
+        "Задания: разговоры о здоровье и спорте, использование словаря, связанного с частями тела и распространенными болезнями, составление предложений о здоровых привычках.",
       link: {
         href: "/ru/students/self-study/a2/health-and-fitness",
         label: "Hачать упражнения",
@@ -205,113 +205,11 @@ export const a2Blocks: Record<string, TopicBlock[]> = {
       topic: "social-media-and-communication",
     },
   ],
-  fr: [
-    {
-      title: "Routines quotidiennes",
-      content:
-        "Exercices: décrire les activités quotidiennes, utiliser le présent simple, faire des phrases sur les routines (Je me réveille à 7h, je vais au travail).",
-      link: {
-        href: "/fr/students/self-study/a2/daily-routines",
-        label: "Commencer les exercices",
-      },
-      topic: "daily-routines",
-    },
-    {
-      title: "Achats et prix",
-      content:
-        "Exercices: faire des dialogues pour les achats, utiliser le vocabulaire des articles et des prix, pratiquer les questions et réponses (Combien ça coûte?).",
-      link: {
-        href: "/fr/students/self-study/a2/shopping-and-prices",
-        label: "Commencer les exercices",
-      },
-      topic: "shopping-and-prices",
-    },
-    {
-      title: "Santé et forme physique",
-      content:
-        "Exercices: parler de la santé et des routines de fitness, utiliser le vocabulaire des parties du corps et des maladies courantes, faire des phrases sur les habitudes saines.",
-      link: {
-        href: "/fr/students/self-study/a2/health-and-fitness",
-        label: "Commencer les exercices",
-      },
-      topic: "health-and-fitness",
-    },
-    {
-      title: "Voyages et vacances",
-      content:
-        "Exercices: décrire les plans de voyage et les expériences de vacances, utiliser le passé simple, faire des phrases sur les lieux visités et les activités faites.",
-      link: {
-        href: "/fr/students/self-study/a2/travel-and-holidays",
-        label: "Commencer les exercices",
-      },
-      topic: "travel-and-holidays",
-    },
-    {
-      title: "Nourriture et cuisine",
-      content:
-        "Exercices: parler des plats préférés et des recettes, utiliser le vocabulaire des ingrédients et des méthodes de cuisson, faire des phrases sur les étapes de la cuisine.",
-      link: {
-        href: "/fr/students/self-study/a2/food-and-cooking",
-        label: "Commencer les exercices",
-      },
-      topic: "food-and-cooking",
-    },
-    {
-      title: "Travail et professions",
-      content:
-        "Exercices: décrire différentes professions et responsabilités professionnelles, utiliser le vocabulaire du travail, faire des phrases sur les tâches quotidiennes au travail.",
-      link: {
-        href: "/fr/students/self-study/a2/work-and-professions",
-        label: "Commencer les exercices",
-      },
-      topic: "work-and-professions",
-    },
-    {
-      title: "Loisirs et intérêts",
-      content:
-        "Exercices: parler des loisirs et des intérêts, utiliser le vocabulaire des activités de loisirs, faire des phrases sur les passe-temps préférés.",
-      link: {
-        href: "/fr/students/self-study/a2/hobbies-and-interests",
-        label: "Commencer les exercices",
-      },
-      topic: "hobbies-and-interests",
-    },
-    {
-      title: "Météo et saisons",
-      content:
-        "Exercices: décrire la météo et les saisons, utiliser le vocabulaire des conditions météorologiques, faire des phrases sur les activités saisonnières.",
-      link: {
-        href: "/fr/students/self-study/a2/weather-and-seasons",
-        label: "Commencer les exercices",
-      },
-      topic: "weather-and-seasons",
-    },
-    {
-      title: "Technologie et gadgets",
-      content:
-        "Exercices: parler de la technologie et des gadgets, utiliser le vocabulaire des appareils électroniques, faire des phrases sur l'utilisation de la technologie dans la vie quotidienne.",
-      link: {
-        href: "/fr/students/self-study/a2/technology-and-gadgets",
-        label: "Commencer les exercices",
-      },
-      topic: "technology-and-gadgets",
-    },
-    {
-      title: "Réseaux sociaux et communication",
-      content:
-        "Exercices: discuter des réseaux sociaux et des méthodes de communication, utiliser le vocabulaire des interactions en ligne, faire des phrases sur l'utilisation des réseaux sociaux.",
-      link: {
-        href: "/fr/students/self-study/a2/social-media-and-communication",
-        label: "Commencer les exercices",
-      },
-      topic: "social-media-and-communication",
-    },
-  ],
   ka: [
     {
       title: "ყოველდღიური რუტინები",
       content:
-        "ვარჯიშები: ყოველდღიური აქტივობების აღწერა, აწმყო მარტივი დროის გამოყენება, რუტინების შესახებ წინადადებების შედგენა (მე ვიღვიძებ 7 საათზე, მე მივდივარ სამსახურში).",
+        "ვარჯიშები: ყოველდღიური აქტივობების აღწერა, აწმყო მარტივი დროის გამოყენება, რუტინების შესახებ წინადადებების შედგენა (მე ვიღვიძებ 7 საათზე, ვვახშმობ, მივდივარ სამსახურში).",
       link: {
         href: "/ka/students/self-study/a2/daily-routines",
         label: "ვარჯიშების დაწყება",

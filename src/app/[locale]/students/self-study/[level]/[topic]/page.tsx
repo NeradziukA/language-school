@@ -4,7 +4,6 @@ import { setStaticParamsLocale } from "next-international/server";
 import styles from "./page.module.css";
 import { Test } from "@/app/components/client";
 import { getTopic } from "@/api/loader";
-import { generateExercises } from "@/api/chatgpt";
 
 export async function generateMetadata({
   params,
@@ -40,19 +39,9 @@ export default async function SelfStudyPage({
   const safeTopic = getTopic(locale, safeLevel, topic);
   setStaticParamsLocale(locale);
 
-  const exercisesLoader = generateExercises(
-    safeTopic?.content || "",
-    safeLevel,
-    locale
-  );
-
   return (
     <main className={styles.content}>
-      <Test
-        level={safeLevel}
-        topic={safeTopic}
-        exercisesLoader={exercisesLoader}
-      />
+      <Test level={safeLevel} topic={safeTopic} />
     </main>
   );
 }

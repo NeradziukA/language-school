@@ -2,34 +2,33 @@
 import { useEffect, useState } from "react";
 import styles from "./Test.module.css";
 import { TopicBlock } from "@/api/types";
-import { useI18n } from "@/app/locales/client";
+import { useCurrentLocale, useI18n } from "@/app/locales/client";
+import { generateExercises } from "@/api/chatgpt";
 
 export function Test({
   level,
   topic,
-  exercisesLoader,
 }: Readonly<{
   level: string;
-  exercisesLoader: Promise<
-    | {
-        question: string;
-        answers: string[];
-      }[]
-    | undefined
-  >;
   topic?: TopicBlock;
 }>) {
   const t = useI18n();
+  const locale = useCurrentLocale();
+  const [lastLoad, setLastLoad] = useState(0);
   const [exercises, setExercises] =
     useState<{ question: string; answers: string[] }[]>();
 
   useEffect(() => {
-    async function loadExercices() {
-      const data = await exercisesLoader;
+    async function loadExercices(query: string) {
+      const data = await generateExercises(query, level, locale);
       setExercises(data);
+      setLastLoad(new Date().getTime());
     }
-    loadExercices();
-  }, [exercisesLoader]);
+    const timestamp = new Date().getTime();
+    if (lastLoad < timestamp - 1000 * 60 && topic?.content) {
+      loadExercices(topic.content);
+    }
+  }, [lastLoad, topic, locale, level]);
 
   if (!exercises?.length) {
     return (

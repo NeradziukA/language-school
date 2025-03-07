@@ -5,6 +5,5 @@ export const { useI18n, useScopedI18n, I18nProviderClient, useCurrentLocale } =
   createI18nClient({
     en: () => import("./en"),
     ru: () => import("./ru"),
-    fr: () => import("./fr"), // TODO remove language
     ka: () => import("./ka"),
   });
