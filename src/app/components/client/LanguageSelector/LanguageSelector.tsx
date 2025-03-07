@@ -1,33 +1,33 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import styles from "./LanguageSelector.module.css";
-import { useRouter, usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 import Cookies from "js-cookie";
 
 export function LanguageSelector() {
   const router = useRouter();
-  const pathname = usePathname();
   const [language, setLanguage] = useState<string>();
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const defaultLanguage = pathname?.split("/")[1];
-      if (defaultLanguage) {
-        setLanguage(defaultLanguage);
-      }
-    }
-  }, [pathname]);
+    const lang = Cookies.get("lang") ?? "en";
+    setLanguage(lang);
+  }, []);
 
   useEffect(() => {
-    if (typeof window !== "undefined" && language) {
-      Cookies.set("lang", language);
-      const currentPath = window.location.pathname.replace(/^\/[a-z]{2}/, "");
+    const currentPath = window.location.pathname.replace(/^\/[a-z]{2}/, "");
+    if (
+      typeof window !== "undefined" &&
+      language &&
+      window.location.pathname !== `/${language}${currentPath}`
+    ) {
       router.push(`/${language}${currentPath}`);
     }
   }, [language, router]);
 
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setLanguage(event.target.value);
+    const lang = event.target.value;
+    Cookies.set("lang", lang);
+    setLanguage(lang);
   };
 
   return (

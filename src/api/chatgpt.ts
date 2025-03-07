@@ -18,11 +18,18 @@ const Exercises = z.object({
   ),
 });
 
+export type Exercise = {
+  question: string;
+  questionType: "pick" | "select" | "write";
+  answers: string[];
+  validAnswer: string;
+};
+
 export async function generateExercises(
   topic: string,
   level: string,
   locale: string
-) {
+): Promise<Exercise[] | undefined> {
   const response = await openai.beta.chat.completions.parse({
     model: "gpt-4o-mini",
     store: true,

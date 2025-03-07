@@ -1,9 +1,10 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styles from "./Test.module.css";
 import { TopicBlock } from "@/api/types";
 import { useCurrentLocale, useI18n } from "@/app/locales/client";
-import { generateExercises } from "@/api/chatgpt";
+import { Exercise } from "@/api/chatgpt";
+import useTests from "@/hooks/useTests";
 
 export function Test({
   level,
@@ -14,29 +15,13 @@ export function Test({
 }>) {
   const t = useI18n();
   const locale = useCurrentLocale();
-  const [lastLoad, setLastLoad] = useState(0);
-  const [exercises, setExercises] = useState<
-    {
-      question: string;
-      questionType: string;
-      answers: string[];
-      validAnswer: string;
-    }[]
-  >();
   const [showValidAnswer, setShowValidAnswer] = useState<number | null>(null);
 
-  useEffect(() => {
-    async function loadExercices(query: string) {
-      const data = await generateExercises(query, level, locale);
-      setExercises(data);
-      setLastLoad(new Date().getTime());
-    }
-    const timestamp = new Date().getTime();
-    if (lastLoad < timestamp - 1000 * 60 && topic?.content) {
-      loadExercices(topic.content);
-      console.log("R");
-    }
-  }, [lastLoad, topic, locale, level]);
+  const exercises: Exercise[] | undefined = useTests(
+    topic?.content ?? "",
+    level,
+    locale
+  );
 
   if (!exercises?.length) {
     return (
