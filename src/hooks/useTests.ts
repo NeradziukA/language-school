@@ -1,5 +1,6 @@
 import { Exercise, generateExercises } from "@/api/chatgpt";
 import { useState, useEffect } from "react";
+
 const queryCache: {
   query?: string;
   timestamp: number;
@@ -25,7 +26,7 @@ const useTests = (topic: string, level: string, locale: string) => {
         setExercises(data || []);
       } catch (e) {
         setExercises([]);
-        setError(setError);
+        setError(e);
       }
     };
 

@@ -3,7 +3,6 @@ import { useState } from "react";
 import styles from "./Test.module.css";
 import { TopicBlock } from "@/api/types";
 import { useCurrentLocale, useI18n } from "@/app/locales/client";
-import { Exercise } from "@/api/chatgpt";
 import useTests from "@/hooks/useTests";
 
 export function Test({
