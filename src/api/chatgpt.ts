@@ -34,16 +34,16 @@ export async function generateExercises(
   exercisesCache.timestamp = timestamp;
   const response = await openai.beta.chat.completions.parse({
     model: "gpt-4o-mini",
-    store: false,
+    store: true,
     messages: [
       {
         role: "system",
         content: `You are creating exercises for learning French. 
-        The exercises should match the student's level. 
-        Level of students is ${level}. Language for questions is ${locale.toUpperCase()}. 
+        The exercises should match the student's level. Level of students is ${level}. 
+        Locale for questions is ${locale.toUpperCase()}. Locale for answers is FR. 
         You will be given a topic for the tasks. You need to create 10 exercises. 
         For each exercise, you must provide 4 answer choices. 
-        For translation exercises, you must provide the language  ${locale.toUpperCase()}. 
+        For translation exercises, you must provide for question the locale ${locale.toUpperCase()} and for answer the locale FR. 
         For grammar exercises, you must provide the correct grammar rule. 
         For vocabulary exercises, you must provide the correct definition.`,
       },

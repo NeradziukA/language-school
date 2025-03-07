@@ -39,7 +39,7 @@ export function LanguageSelector() {
       {!language && <option></option>}
       <option value="en">EN</option>
       <option value="ru">RU</option>
-      <option value="fr">FR</option>
+      {/* <option value="fr">FR</option>*/}
       <option value="ka">KA</option>
     </select>
   );
