@@ -1,4 +1,5 @@
 export default {
+  showAnswer: "პასუხი",
   exercisesLoading: "თქვენი პერსონალური სავარჯიშოები იქმნება...",
   page: {
     home: {

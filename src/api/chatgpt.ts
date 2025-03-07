@@ -11,7 +11,9 @@ const Exercises = z.object({
   exercises: z.array(
     z.object({
       question: z.string(),
+      questionType: z.enum(["pick", "select", "write"]),
       answers: z.array(z.string()),
+      validAnswer: z.string(),
     })
   ),
 });
@@ -27,22 +29,17 @@ export async function generateExercises(
     messages: [
       {
         role: "system",
-        content: `You are creating exercises for learning French. 
-        The exercises should match the student's level. 
-        Level of students is ${level}. 
-        Language for questions is 
-        ${localeToLanguage(locale.toUpperCase())}.
-        Language for answers is French. 
-        You will be given a topic for the tasks. 
-        You need to create 10 exercises. 
-        For each exercise, you must provide 4 answer choices. 
-        For translation exercises, you must use
-        ${localeToLanguage(locale.toUpperCase())} 
-        for questions, and French for answers. 
-        For grammar exercises, you must provide the correct French 
-        grammar rule. 
-        For vocabulary exercises, you must provide the correct definition.
-        Avoid personal questions.
+        content: `
+        Ты создаешь упражнения для изучающих французский язык. 
+        Упражнения должны соответствовать уровню студента ${level}. 
+        Вопросы должны быть на ${localeToLanguage(locale.toUpperCase())} языке. 
+        Ответы — на французском языке. Необходимо создать 10 упражнений.  
+        Допускается 3 типа заданий: 
+        выбрать правильный ответ из предложенных (4 задания, варианты предлагать), 
+        вставить пропущенное слово (4 задания, варианты предлагать), 
+        написать правильный ответ (2 задания, предоставить фразу для перевода, варианты не предлагать). 
+        Предоставить правильный ответ. Избегай личных вопросов.
+        Тема для заданий будет дана. 
 `,
       },
       {
@@ -58,9 +55,9 @@ export async function generateExercises(
 
 function localeToLanguage(locale: string): string {
   const map: { [key: string]: string } = {
-    RU: "Russian",
-    EN: "English",
-    KA: "Georgian",
+    RU: "Русский",
+    EN: "Английский",
+    KA: "Грузинский",
   };
   return map[locale];
 }

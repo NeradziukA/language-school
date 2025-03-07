@@ -1,4 +1,5 @@
 export default {
+  showAnswer: "Answer",
   exercisesLoading: "Your personalized exercises are being created...",
   page: {
     home: {

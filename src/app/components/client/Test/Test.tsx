@@ -15,8 +15,15 @@ export function Test({
   const t = useI18n();
   const locale = useCurrentLocale();
   const [lastLoad, setLastLoad] = useState(0);
-  const [exercises, setExercises] =
-    useState<{ question: string; answers: string[] }[]>();
+  const [exercises, setExercises] = useState<
+    {
+      question: string;
+      questionType: string;
+      answers: string[];
+      validAnswer: string;
+    }[]
+  >();
+  const [showValidAnswer, setShowValidAnswer] = useState<number | null>(null);
 
   useEffect(() => {
     async function loadExercices(query: string) {
@@ -55,7 +62,28 @@ export function Test({
                 {answer}
               </li>
             ))}
+            {/* {exercise.questionType} */}
           </ul>
+          <div className={styles.validAnswerWrap}>
+            {showValidAnswer !== index && (
+              <button
+                className={styles.validAnswer}
+                onClick={() =>
+                  setShowValidAnswer(showValidAnswer === index ? null : index)
+                }
+              >
+                {t("showAnswer")}
+              </button>
+            )}
+            {showValidAnswer === index && (
+              <button
+                className={styles.validAnswer}
+                onClick={() => setShowValidAnswer(null)}
+              >
+                {exercise.validAnswer}
+              </button>
+            )}
+          </div>
         </div>
       ))}
     </div>

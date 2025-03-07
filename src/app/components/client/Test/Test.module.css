@@ -30,6 +30,17 @@
   margin: 0 20px;
 }
 
+.validAnswerWrap {
+  text-align: right;
+}
+
+.validAnswer {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: var(--text-second);
+}
+
 @media (max-width: 800px) {
   .content {
     margin: 20px 30px;
