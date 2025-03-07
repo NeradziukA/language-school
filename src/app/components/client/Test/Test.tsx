@@ -34,6 +34,7 @@ export function Test({
     const timestamp = new Date().getTime();
     if (lastLoad < timestamp - 1000 * 60 && topic?.content) {
       loadExercices(topic.content);
+      console.log("R");
     }
   }, [lastLoad, topic, locale, level]);
 
