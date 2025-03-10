@@ -15,7 +15,7 @@ export const a2Blocks: Record<string, TopicBlock[]> = {
     {
       title: "Shopping and Prices",
       content:
-        "Exercises: making dialogues for shopping, using vocabulary for items and prices, practicing questions and answers (How much does it cost?).",
+        "Exercises: using vocabulary for items and prices, practicing questions and answers (How much does it cost?).",
       link: {
         href: "/en/students/self-study/a2/shopping-and-prices",
         label: "Start exercises",
@@ -117,7 +117,7 @@ export const a2Blocks: Record<string, TopicBlock[]> = {
     {
       title: "Покупки и цены",
       content:
-        "Задания: составление диалогов для покупок, использование словаря для предметов и цен, практика вопросов и ответов (Сколько это стоит?).",
+        "Задания: использование словаря для предметов и цен, практика вопросов и ответов (Сколько это стоит?).",
       link: {
         href: "/ru/students/self-study/a2/shopping-and-prices",
         label: "Hачать упражнения",
@@ -219,7 +219,7 @@ export const a2Blocks: Record<string, TopicBlock[]> = {
     {
       title: "შოპინგი და ფასები",
       content:
-        "ვარჯიშები: შოპინგის დიალოგების შედგენა, ნივთებისა და ფასების ლექსიკის გამოყენება, კითხვებისა და პასუხების პრაქტიკა (რამდენი ღირს ეს?).",
+        "ვარჯიშები: ნივთებისა და ფასების ლექსიკის გამოყენება, კითხვებისა და პასუხების პრაქტიკა (რამდენი ღირს ეს?).",
       link: {
         href: "/ka/students/self-study/a2/shopping-and-prices",
         label: "ვარჯიშების დაწყება",

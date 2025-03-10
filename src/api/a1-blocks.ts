@@ -45,7 +45,7 @@ export const a1Blocks: Record<string, TopicBlock[]> = {
     {
       title: "Food and Drinks",
       content:
-        "Exercises: making dialogues for ordering food, using words for food items (bread, meat, vegetables, drinks), practicing phrases in cafes and restaurants.",
+        "Exercises: using words for food items (bread, meat, vegetables, drinks), practicing phrases in cafes and restaurants.",
       link: {
         href: "/en/students/self-study/a1/food-and-drinks",
         label: "Start exercises",
@@ -65,7 +65,7 @@ export const a1Blocks: Record<string, TopicBlock[]> = {
     {
       title: "Places in the City and Directions",
       content:
-        "Exercises: using prepositions of place (in, on, next to), making sentences and dialogues on the topic 'How to get to the store?' or 'Where is the library?'.",
+        "Exercises: using prepositions of place (in, on, next to), making sentences on the topic 'How to get to the store?' or 'Where is the library?'.",
       link: {
         href: "/en/students/self-study/a1/places-in-the-city-and-directions",
         label: "Start exercises",
@@ -95,12 +95,22 @@ export const a1Blocks: Record<string, TopicBlock[]> = {
     {
       title: "Travel and Transport",
       content:
-        "Exercises: describing ways of transportation (train, bus, airplane), questions and answers about travel, making dialogues at the airport or train station.",
+        "Exercises: describing ways of transportation (train, bus, airplane), questions and answers about travel.",
       link: {
         href: "/en/students/self-study/a1/travel-and-transport",
         label: "Start exercises",
       },
       topic: "travel-and-transport",
+    },
+    {
+      title: "Shopping",
+      content:
+        "Exercises: using vocabulary for items and prices, practicing questions and answers (How much is this?).",
+      link: {
+        href: "/en/students/self-study/a1/shopping",
+        label: "Start exercises",
+      },
+      topic: "shopping",
     },
   ],
   ru: [
@@ -147,7 +157,7 @@ export const a1Blocks: Record<string, TopicBlock[]> = {
     {
       title: "Еда и напитки",
       content:
-        "Задания: составление диалогов для заказа еды, использование слов для продуктов питания (хлеб, мясо, овощи, напитки), тренировка фраз в кафе и ресторане.",
+        "Задания: использование слов для продуктов питания (хлеб, мясо, овощи, напитки), тренировка фраз в кафе и ресторане.",
       link: {
         href: "/ru/students/self-study/a1/food-and-drinks",
         label: "Hачать упражнения",
@@ -167,7 +177,7 @@ export const a1Blocks: Record<string, TopicBlock[]> = {
     {
       title: "Места в городе и направления",
       content:
-        "Задания: упражнения на предлоги места (в, на, рядом с), составление предложений и диалогов по теме 'Как пройти в магазин?' или 'Где находится библиотека?'.",
+        "Задания: упражнения на предлоги места (в, на, рядом с), составление предложений по теме 'Как пройти в магазин?' или 'Где находится библиотека?'.",
       link: {
         href: "/ru/students/self-study/a1/places-in-the-city-and-directions",
         label: "Hачать упражнения",
@@ -197,12 +207,22 @@ export const a1Blocks: Record<string, TopicBlock[]> = {
     {
       title: "Путешествия и транспорт",
       content:
-        "Задания: описание способов передвижения (поезд, автобус, самолёт), вопросы и ответы о путешествиях, составление диалогов в аэропорту или на вокзале.",
+        "Задания: описание способов передвижения (поезд, автобус, самолёт), вопросы и ответы о путешествиях.",
       link: {
         href: "/ru/students/self-study/a1/travel-and-transport",
         label: "Hачать упражнения",
       },
       topic: "travel-and-transport",
+    },
+    {
+      title: "Покупки",
+      content:
+        "Задания: использование словаря для предметов и цен, практика вопросов и ответов (Сколько это стоит?).",
+      link: {
+        href: "/ru/students/self-study/a1/shopping",
+        label: "Hачать упражнения",
+      },
+      topic: "shopping",
     },
   ],
   ka: [
@@ -249,7 +269,7 @@ export const a1Blocks: Record<string, TopicBlock[]> = {
     {
       title: "საკვები და სასმელები",
       content:
-        "ვარჯიშები: საკვების შეკვეთის დიალოგების შედგენა, საკვების ნივთების სიტყვების გამოყენება (პური, ხორცი, ბოსტნეული, სასმელები), კაფეებსა და რესტორნებში ფრაზების ვარჯიში.",
+        "ვარჯიშები: საკვების ნივთების სიტყვების გამოყენება (პური, ხორცი, ბოსტნეული, სასმელები), კაფეებსა და რესტორნებში ფრაზების ვარჯიში.",
       link: {
         href: "/ka/students/self-study/a1/food-and-drinks",
         label: "ვარჯიშების დაწყება",
@@ -269,7 +289,7 @@ export const a1Blocks: Record<string, TopicBlock[]> = {
     {
       title: "ადგილები ქალაქში და მიმართულებები",
       content:
-        "ვარჯიშები: ადგილის წინდებულების გამოყენება (ში, ზე, გვერდით), წინადადებებისა და დიალოგების შედგენა თემაზე 'როგორ მივიდეთ მაღაზიაში?' ან 'სად არის ბიბლიოთეკა?'.",
+        "ვარჯიშები: ადგილის წინდებულების გამოყენება (ში, ზე, გვერდით), წინადადებების შედგენა თემაზე 'როგორ მივიდეთ მაღაზიაში?' ან 'სად არის ბიბლიოთეკა?'.",
       link: {
         href: "/ka/students/self-study/a1/places-in-the-city-and-directions",
         label: "ვარჯიშების დაწყება",
@@ -299,12 +319,22 @@ export const a1Blocks: Record<string, TopicBlock[]> = {
     {
       title: "მოგზაურობა და ტრანსპორტი",
       content:
-        "ვარჯიშები: ტრანსპორტირების გზების აღწერა (მატარებელი, ავტობუსი, თვითმფრინავი), მოგზაურობის შესახებ კითხვები და პასუხები, დიალოგების შედგენა აეროპორტში ან სადგურზე.",
+        "ვარჯიშები: ტრანსპორტირების გზების აღწერა (მატარებელი, ავტობუსი, თვითმფრინავი), მოგზაურობის შესახებ კითხვები და პასუხები.",
       link: {
         href: "/ka/students/self-study/a1/travel-and-transport",
         label: "ვარჯიშების დაწყება",
       },
       topic: "travel-and-transport",
+    },
+    {
+      title: "შოპინგი",
+      content:
+        "ვარჯიშები: ნივთებისა და ფასების ლექსიკის გამოყენება, კითხვებისა და პასუხების პრაქტიკა (რამდენი ღირს ეს?).",
+      link: {
+        href: "/ka/students/self-study/a1/shopping",
+        label: "ვარჯიშების დაწყება",
+      },
+      topic: "shopping",
     },
   ],
 };
