@@ -1,6 +1,7 @@
 export default {
-  showAnswer: "Ответ",
+  error: "К сожалению, произошла ошибка.",
   exercisesLoading: "Ваши персональные упражнения создаются...",
+  showAnswer: "Ответ",
   page: {
     home: {
       asideTile: {

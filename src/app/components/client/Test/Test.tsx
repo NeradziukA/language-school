@@ -3,7 +3,6 @@ import { useState } from "react";
 import styles from "./Test.module.css";
 import { TopicBlock } from "@/api/types";
 import { useCurrentLocale, useI18n } from "@/app/locales/client";
-import { Exercise } from "@/api/chatgpt";
 import useTests from "@/hooks/useTests";
 
 export function Test({
@@ -17,11 +16,15 @@ export function Test({
   const locale = useCurrentLocale();
   const [showValidAnswer, setShowValidAnswer] = useState<number | null>(null);
 
-  const exercises: Exercise[] | undefined = useTests(
-    topic?.content ?? "",
-    level,
-    locale
-  );
+  const { exercises, error } = useTests(topic?.content ?? "", level, locale);
+
+  if (error) {
+    return (
+      <div className={`${styles.content}`}>
+        <div className={styles.offer}>{t("error")}</div>
+      </div>
+    );
+  }
 
   if (!exercises?.length) {
     return (

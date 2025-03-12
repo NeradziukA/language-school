@@ -32,15 +32,27 @@ export async function generateExercises(
 ): Promise<Exercise[] | undefined> {
   const response = await openai.beta.chat.completions.parse({
     model: "gpt-4o-mini",
-    store: true,
+    store: false,
     messages: [
       {
         role: "system",
-        content: getPrompt("ru", localeToLanguage(locale.toUpperCase()), level),
+        content: [
+          {
+            type: "text",
+            text: `Представь что ты высококалифицированный преподаватель французского языка. Ты должен составит вопрос и 1 правильный ответ и 3 не правильных ответа на для определения уровня языка студента, ответить на него, сравнить с правильным ответом и оценить уровень. Уровень должен быть ${level}.  Если все правильно - покажи вопрос и ответ. Составь таким образом 8 вопросов. Родной язык студента ${localeToLanguage(
+              locale.toUpperCase()
+            )}`,
+          },
+        ],
       },
       {
         role: "user",
-        content: topic,
+        content: [
+          {
+            type: "text",
+            text: topic,
+          },
+        ],
       },
     ],
     response_format: zodResponseFormat(Exercises, "exercises"),
@@ -51,9 +63,9 @@ export async function generateExercises(
 
 function localeToLanguage(locale: string): string {
   const map: { [key: string]: string } = {
-    RU: "русском",
-    EN: "английском",
-    KA: "грузинском",
+    RU: "русского",
+    EN: "английского",
+    KA: "грузинского",
   };
   return map[locale];
 }
