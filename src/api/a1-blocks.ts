@@ -3,6 +3,16 @@ import { TopicBlock } from "./types";
 export const a1Blocks: Record<string, TopicBlock[]> = {
   en: [
     {
+      title: "Numbers",
+      content:
+        "Exercises: choose the correct way to write numbers from one to twenty.",
+      link: {
+        href: "/en/students/self-study/a1/numbers-0-20",
+        label: "Start exercises",
+      },
+      topic: "numbers-0-20",
+    },
+    {
       title: "Greetings and Introductions",
       content:
         "Exercises: filling in the blanks in dialogues, translating greetings, practicing introductions (What's your name? Where are you from?).",
@@ -105,6 +115,16 @@ export const a1Blocks: Record<string, TopicBlock[]> = {
   ],
   ru: [
     {
+      title: "Числа",
+      content:
+        "Задание: выберите как правильно написать число от одного до двадцати.",
+      link: {
+        href: "/ru/students/self-study/a1/numbers-0-20",
+        label: "Hачать упражнения",
+      },
+      topic: "numbers-0-20",
+    },
+    {
       title: "Приветствия и знакомства",
       content:
         "Задания: заполнение пробелов в диалогах, перевод приветствий, практика знакомства (Как вас зовут? Откуда вы?).",
@@ -206,6 +226,16 @@ export const a1Blocks: Record<string, TopicBlock[]> = {
     },
   ],
   ka: [
+    {
+      title: "რიცხვები",
+      content:
+        "ვარჯიშები: აირჩიეთ სწორი გზა რიცხვების დაწერისთვის ერთიდან ოცამდე.",
+      link: {
+        href: "/ka/students/self-study/a1/numbers-0-20",
+        label: "ვარჯიშების დაწყება",
+      },
+      topic: "numbers-0-20",
+    },
     {
       title: "მისალმებები და გაცნობა",
       content:
