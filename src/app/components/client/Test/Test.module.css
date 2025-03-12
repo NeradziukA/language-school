@@ -44,12 +44,12 @@
 .footer {
   display: flex;
   justify-content: space-between;
+}
 
-  button {
-    padding: 3px 10px;
-    cursor: pointer;
-    border: none;
-  }
+.button {
+  padding: 3px 10px;
+  cursor: pointer;
+  border: none;
 }
 
 @media (max-width: 800px) {
