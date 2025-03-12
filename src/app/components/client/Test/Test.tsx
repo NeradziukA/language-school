@@ -78,13 +78,8 @@ export function Test({
 
       <div className={styles.offer}>
         <div className={styles.footer}>
-          <button onClick={() => history.back()} className={styles.title}>
-            {t("back")}
-          </button>
-          <button
-            onClick={() => window.location.reload()}
-            className={styles.title}
-          >
+          <button onClick={() => history.back()}>{t("back")}</button>
+          <button onClick={() => window.location.reload()}>
             {t("refresh")}
           </button>
         </div>
