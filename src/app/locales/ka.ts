@@ -1,6 +1,8 @@
 export default {
+  back: "უკან",
   error: "სამწუხაროდ, შეცდომა მოხდა.",
   exercisesLoading: "თქვენი პერსონალური სავარჯიშოები იქმნება...",
+  reload: "განახლება",
   showAnswer: "პასუხი",
   page: {
     home: {

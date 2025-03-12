@@ -41,6 +41,16 @@
   color: var(--text-second);
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    padding: 3px 10px;
+    cursor: pointer;
+  }
+}
+
 @media (max-width: 800px) {
   .content {
     margin: 20px 30px;

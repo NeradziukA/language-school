@@ -4,6 +4,7 @@ import styles from "./Test.module.css";
 import { TopicBlock } from "@/api/types";
 import { useCurrentLocale, useI18n } from "@/app/locales/client";
 import useTests from "@/hooks/useTests";
+import Link from "next/link";
 
 export function Test({
   level,
@@ -51,7 +52,6 @@ export function Test({
                 {answer}
               </li>
             ))}
-            {/* {exercise.questionType} */}
           </ul>
           <div className={styles.validAnswerWrap}>
             {showValidAnswer !== index && (
@@ -75,6 +75,20 @@ export function Test({
           </div>
         </div>
       ))}
+
+      <div className={styles.offer}>
+        <div className={styles.footer}>
+          <button onClick={() => history.back()} className={styles.title}>
+            {t("back")}
+          </button>
+          <button
+            onClick={() => window.location.reload()}
+            className={styles.title}
+          >
+            {t("refresh")}
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

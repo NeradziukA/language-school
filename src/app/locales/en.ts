@@ -1,6 +1,8 @@
 export default {
+  back: "Back",
   error: "Unfortunately, an error occurred.",
   exercisesLoading: "Your personalized exercises are being created...",
+  reload: "Reload",
   showAnswer: "Answer",
   page: {
     home: {

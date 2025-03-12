@@ -1,6 +1,8 @@
 export default {
+  back: "Назад",
   error: "К сожалению, произошла ошибка.",
   exercisesLoading: "Ваши персональные упражнения создаются...",
+  reload: "Обновить",
   showAnswer: "Ответ",
   page: {
     home: {
