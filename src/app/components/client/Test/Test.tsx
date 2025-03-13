@@ -4,7 +4,6 @@ import styles from "./Test.module.css";
 import { TopicBlock } from "@/api/types";
 import { useCurrentLocale, useI18n } from "@/app/locales/client";
 import useTests from "@/hooks/useTests";
-import Link from "next/link";
 
 export function Test({
   level,
@@ -78,8 +77,13 @@ export function Test({
 
       <div className={styles.offer}>
         <div className={styles.footer}>
-          <button onClick={() => history.back()}>{t("back")}</button>
-          <button onClick={() => window.location.reload()}>
+          <button className={styles.button} onClick={() => history.back()}>
+            {t("back")}
+          </button>
+          <button
+            className={styles.button}
+            onClick={() => window.location.reload()}
+          >
             {t("refresh")}
           </button>
         </div>
